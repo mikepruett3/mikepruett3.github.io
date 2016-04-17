@@ -31,4 +31,4 @@ Any views or opinions expressed here are strictly my own. Content published here
 
 # Contact Me
 
-If you’d like to send me an e-mail, you can reach me at mpruett at nixdevil dot com.
+If you’d like to send me an e-mail, you can reach me at mpruett at nixdevil dot com. Also on Twitter, and Reddit (/u/torafuma).
