@@ -1,0 +1,17 @@
+---
+author: Mike Pruett
+comments: true
+date: 2009-08-20 00:34:14+00:00
+layout: post
+slug: district-8
+title: District 8
+tags: [movies, videos]
+categories: [Movies]
+share: true
+---
+
+So this past weekend I had a chance to see the new movie from director Neil Blomkamp, [District 9](http://www.d-9.com/). If you haven't seen District 9 yet, you owe it to yourself to see this movie. The story is great, and the special effects are subtle yet impressive. The director has created a world were the main event is not the Aliens them selfs, but rather their environment & quest to go home.
+
+Apparently Neil had produced a short-film before District 9 was produced. This video could be considered a snippet of what he was trying to create with the full movie. "Alive in Joburg" is short, but fun to watch. Check this one out, as well as other videos from [Spy Films](http://www.spyfilms.com).
+
+<object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/WHYBpljIckE&hl=en&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/WHYBpljIckE&hl=en&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed></object>

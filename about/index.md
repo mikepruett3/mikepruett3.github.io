@@ -2,37 +2,33 @@
 layout: page
 title: About
 share: true
+layout: dark-post
 ---
 
-# Neo-HPSTR Jekyll Theme
+# Hello There!
 
-Neo-HPSTR Jekyll is a responsive and modern blog template.
+My name is Mike Pruett, and this is my blog on technology, movies, tv, and any other randomness that I can think of.
 
-# Live Demo
+Consider this site a collection of my old blog posts, and current posts on whatever I encounter or find interesting.
 
-You can see it running [here](http://blog.rhesoft.com/) and [here](http://aronbordin.com/neo-hpstr-jekyll-theme/).
+# Information
 
+Originally a Southern California native for over 20 years, now living and working in Fort Worth Texas. With my wife and son, we are slowly 
+adjusting to the heat, and the active DFW lifestyle.
 
-## What Neo-HPSTR brings to the table:
+# Professional Career
 
-* Modern design.
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Sweet topbar animated menu with support for drop-downs.
-* Optional [Disqus](http://disqus.com) comments and social sharing links.
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page](http://mmistakes.github.io/hpstr-jekyll-theme/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/hpstr-jekyll-theme/code-highlighting-post/) to make your code examples look snazzy
-* Author panel, with social links
-* Read more tag support(similar with Wordpress ).
+Having spent the better half of 20 years in the Information Technology industry, I have seen and experienced a considerable ammount.
+Most of my professional carreer has been spent supporting Linux & Windows servers, as well as supporting Network Switching, and
+Firewalls.
 
-![Preview](http://aronbordin.com/images/neo-hpstr-jekyll-theme-preview.png)
+I spent 10 years with a Pharmaceutical Organization in Southern California, where I learned to hone my Documentation as well as my
+Technical Skills.
 
+# Disclaimer
 
----
+Any views or opinions expressed here are strictly my own. Content published here is not read, reviewed, or approved in advance by my employer and does not necessarily represent or reflect the views or opinions of my employer or any of its divisions, subsidiaries, or business partners.
 
-## Getting Started
+# Contact Me
 
-Neo-HPSTR takes advantage of Sass and data files to make customizing easier. These features require Jekyll 2.x and will not work with older versions of Jekyll.
-
-To learn how to install and use this theme check out the [Setup Guid](http://aronbordin.com/neo-hpstr-jekyll-theme//theme-setup/) for more information.
+If you’d like to send me an e-mail, you can reach me at mpruett at nixdevil dot com.

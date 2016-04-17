@@ -1,0 +1,31 @@
+---
+author: Mike Pruett
+comments: true
+date: 2005-06-07 06:02:00+00:00
+layout: post
+slug: i-am-back
+title: I'm Back!!
+tags: [site, news]
+categories: [Security]
+share: true
+---
+
+Its been awhile... and all I can say is **Im Back!**
+
+I have been extremely busy for the past year, what with the massive undertaking of my Companies Sarbanes-Oxley compliance, and managing the entire department while our new Director got up to speed. Not an easy task!
+
+But now I'm back... and I plan to put this blog to good use!
+
+So... to start of on the right foot, I am going to be documenting one of my many projects:
+
+
+
+	
+  * Re-building my Gentoo Linux / SNORT IDS system
+
+
+Its getting a little long in the tooth, and since I have been maintaing this box for the past year I have a better idea as how to do it right! (Long sentences... whatever.)
+
+So out with the old... (Stuipd Topics, Profanity... etc.) and in with the new!
+
+Hopefully my ramblings can be of some use to the rest of the WWW.

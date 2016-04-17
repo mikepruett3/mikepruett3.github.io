@@ -1,0 +1,23 @@
+---
+author: Mike Pruett
+comments: true
+date: 2009-08-20 14:15:29+00:00
+layout: post
+slug: cfw-5-00-m33-to-5-50-gen-b
+title: CFW 5.00 M33 to 5.50 GEN-B
+tags: [gaming, videos]
+categories: [Games]
+share: true
+image:
+  background: sony_psp_1000.png
+---
+
+Not sure if this works, but I am destined to try!
+
+Seems like newer games are requiring the 5.50 firmware, but I am still running CFW 5.00 M33! Where the hell is Dark-Alex gone to?
+
+Oh well... for your viewing pleasure!
+
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="344" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/woByTo6dzmw&amp;hl=en&amp;fs=1&amp;" /><param name="allowfullscreen" value="true" /><embed type="application/x-shockwave-flash" width="425" height="344" src="http://www.youtube.com/v/woByTo6dzmw&amp;hl=en&amp;fs=1&amp;" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+The instructions in the comments are pretty decent. If you need your PSP to be running Custom Firmware... let me know.
