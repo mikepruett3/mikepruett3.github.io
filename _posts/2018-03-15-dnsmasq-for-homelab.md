@@ -10,8 +10,6 @@ categories: [Linux]
 share: true
 ---
 
-# Using dnsmasq for your Homelab
-
 Like many of you, I run a homelab for a number of reasons. Not the least of which is for the following:
 
 - Testing Configurations of Virtual Hypervisors
