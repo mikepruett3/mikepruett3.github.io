@@ -7,14 +7,13 @@ layout: dark-post
 
 # Hello There!
 
-My name is Mike Pruett, and this is my blog on technology, movies, tv, and any other randomness that I can think of.
+My name is Mike Pruett, and this is my blog on technology, beer,movies, tv, and any other randomness that I can think of.
 
 Consider this site a collection of my old blog posts, and current posts on whatever I encounter or find interesting.
 
 # Information
 
-Originally a Southern California native for over 20 years, now living and working in Fort Worth Texas. With my wife and son, we are slowly 
-adjusting to the heat, and the active DFW lifestyle.
+Originally a Southern California native for over 20 years, now living and working in DFW area (Texas). With my wife and son, we are slowly adjusting to the heat!
 
 # Professional Career
 
@@ -31,4 +30,4 @@ Any views or opinions expressed here are strictly my own. Content published here
 
 # Contact Me
 
-If you’d like to send me an e-mail, you can reach me at mpruett at nixdevil dot com. Also on Twitter, and Reddit (/u/torafuma).
+If you’d like to send me an e-mail, you can reach me at mpruett at nixdevil dot com. Also on Twitter, and Reddit (/u/Human_Cartographer).

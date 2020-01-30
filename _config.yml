@@ -31,16 +31,16 @@ owner:
   name:           Mike Pruett
   site:           http://www.nixdevil.com
   avatar:         uploads/avatar.jpg
-  bio:            "Super passionate about Linux, Open Source Software, Beer, and Life. My mission is to dominate the IT world with my charasmatic style."
+  bio:            "Super passionate about Linux, Open Source Software, Beer, and Life. My mission is to dominate the IT world with my charismatic style."
   email:          mpruett@nixdevil.com
   # Twitter nick for use in Twitter cards and follow button.
-  twitter: mikepruett3 # if no twitter in this config, the twitter follow button will be removed
+  #twitter: mikepruett3 # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
   github: mikepruett3
 
 # Twitter account associated with the site if different from owner/author twitter account.
 # Used in Twitter cards.
-twitter: 
+#twitter: 
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
@@ -51,7 +51,7 @@ social:
   - title: "youtube"
     url: "https://www.youtube.com/channel/UCE4rSpkt95j7wAWjqh4_myQ"
   - title: "reddit"
-    url: "https://www.reddit.com/user/torafuma"
+    url: "https://www.reddit.com/user/Human_Cartographer"
  
 # Background image to be tiled on all pages
 background:
