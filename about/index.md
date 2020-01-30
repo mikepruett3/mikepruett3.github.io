@@ -7,7 +7,7 @@ layout: dark-post
 
 # Hello There!
 
-My name is Mike Pruett, and this is my blog on technology, beer,movies, tv, and any other randomness that I can think of.
+My name is Mike Pruett, and this is my blog on technology, beer, movies, tv, and any other randomness that I can think of.
 
 Consider this site a collection of my old blog posts, and current posts on whatever I encounter or find interesting.
 
