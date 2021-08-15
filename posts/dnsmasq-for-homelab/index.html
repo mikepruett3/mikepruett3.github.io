@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Using dnsmasq for your Homelab - A haven for Unix & Linux deviants</title><link rel="apple-touch-icon" href="https://mikepruett3.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://mikepruett3.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://mikepruett3.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://mikepruett3.github.io/images/favicons/manifest.json">
+<link rel="icon" href="https://mikepruett3.github.io/images/favicons/favicon.ico">
+<meta name="keywords" content="" />
+<meta name="description" content="" /><meta itemprop="name" content="Using dnsmasq for your Homelab">
+<meta itemprop="description" content="Like many of you, I run a homelab for a number of reasons. Not the least of which is for the following:
+ Testing Configurations of Virtual Hypervisors Testing Software and Application Configurations A File Server for the Home Media Tools and Storage  Mostly, my lab is for the latter&hellip; as I host a 22TB Local Media server in my Homelab. The Media is being hosted using Plex, my all-time favorite media server software."><meta itemprop="datePublished" content="2018-03-15T13:23:01+00:00" />
+<meta itemprop="dateModified" content="2018-03-15T13:23:01+00:00" />
+<meta itemprop="wordCount" content="2131">
+<meta itemprop="keywords" content="dns,selfhosted," /><meta property="og:title" content="Using dnsmasq for your Homelab" />
+<meta property="og:description" content="Like many of you, I run a homelab for a number of reasons. Not the least of which is for the following:
+ Testing Configurations of Virtual Hypervisors Testing Software and Application Configurations A File Server for the Home Media Tools and Storage  Mostly, my lab is for the latter&hellip; as I host a 22TB Local Media server in my Homelab. The Media is being hosted using Plex, my all-time favorite media server software." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mikepruett3.github.io/posts/dnsmasq-for-homelab/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-03-15T13:23:01+00:00" />
+<meta property="article:modified_time" content="2018-03-15T13:23:01+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using dnsmasq for your Homelab"/>
+<meta name="twitter:description" content="Like many of you, I run a homelab for a number of reasons. Not the least of which is for the following:
+ Testing Configurations of Virtual Hypervisors Testing Software and Application Configurations A File Server for the Home Media Tools and Storage  Mostly, my lab is for the latter&hellip; as I host a 22TB Local Media server in my Homelab. The Media is being hosted using Plex, my all-time favorite media server software."/>
+<link rel=stylesheet href="https://mikepruett3.github.io/css/bundle.min.f2209a83bfa7f733540426e3abe2edccef95ac63c8535e2b3750caccec2f85ed.css" integrity="sha256-8iCag7&#43;n9zNUBCbjq&#43;LtzO&#43;VrGPIU14rN1DKzOwvhe0=" crossorigin="anonymous"><script src="https://mikepruett3.github.io/js/bundle.min.7e0d9da422e1785c9d1474d421aa85bee81bb5aeb873bda0beaf515b6f9b039f.js" integrity="sha256-fg2dpCLheFydFHTUIaqFvugbta64c72gvq9RW2&#43;bA58=" crossorigin="anonymous"></script>
+</head><body><header><nav class="navbar navbar-expand-xl fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://mikepruett3.github.io/">
+      <img class="logo" alt="Logo" src="https://mikepruett3.github.io/images/logo.webp" loading="lazy"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://mikepruett3.github.io/search">
+  <div class="input-group input-group-sm">
+    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
+    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
+  </div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
+          <a class="nav-link" href="https://mikepruett3.github.io/archives/">
+            <i class="fas fa-fw fa-file-archive"></i>Archives
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://mikepruett3.github.io/categories/">
+            <i class="fas fa-fw fa-folder"></i>Categories
+          </a>
+        </li><li class="nav-item">
+          <a class="nav-link" href="https://mikepruett3.github.io/tags/">
+            <i class="fas fa-fw fa-tags"></i>Tags
+          </a>
+        </li><li class="nav-item">
+  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasSettings" role="button"
+    aria-controls="offcanvasSettings">
+    <i class="fas fa-fw fa-sliders-h"></i> Settings
+  </a>
+</li>
+
+<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings"
+  aria-labelledby="offcanvasSettingsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" w id="offcanvasSettingsLabel"><i class="fas fa-fw fa-sliders-h"></i> Settings</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body"><section class="setting">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-adjust"></i> Mode</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="modeSwitcher">
+      </div>
+    </div>
+  </form>
+</section>
+<section class="setting palettes">
+  <form class="row">
+    <div class="col-auto">
+      <label><i class="fas fa-fw fa-palette"></i> Palette</label>
+    </div>
+    <div class="col-auto ms-auto">
+      <span id="btnPalette" class="btn btn-sm"><i class="fas fa-eye-dropper"></i></span>
+    </div>
+  </form>
+  <div class="container mt-2 visually-hidden" id="palettePicker">
+    <div class="btn-group"><button type="button" id="palette-blue" title="Blue" 
+          class="btn btn-sm palette bg-blue d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-blue-gray" title="Blue Gray" 
+          class="btn btn-sm palette bg-blue-gray d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-brown" title="Brown" 
+          class="btn btn-sm palette bg-brown d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-cyan" title="Cyan" 
+          class="btn btn-sm palette bg-cyan d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-green" title="Green" 
+          class="btn btn-sm palette bg-green d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-indigo" title="Indigo" 
+          class="btn btn-sm palette bg-indigo d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-orange" title="Orange" 
+          class="btn btn-sm palette bg-orange d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-pink" title="Pink" 
+          class="btn btn-sm palette bg-pink d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-purple" title="Purple" 
+          class="btn btn-sm palette bg-purple d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-red" title="Red" 
+          class="btn btn-sm palette bg-red d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-teal" title="Teal" 
+          class="btn btn-sm palette bg-teal d-flex align-items-center justify-content-center">
+        </button><button type="button" id="palette-yellow" title="Yellow" 
+          class="btn btn-sm palette bg-yellow d-flex align-items-center justify-content-center">
+        </button></button>
+    </div>
+  </div>
+</section></div>
+</div></ul>
+    </div>
+  </div>
+</nav>
+</header>
+<main role="main" class="container">
+      <div class="row content">
+<div class="col-lg-8">
+  <div class="container"><nav class="row" aria-label="breadcrumb">
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://mikepruett3.github.io/">Home</a></li><li class="breadcrumb-item"><a href="https://mikepruett3.github.io/posts/">Posts</a></li><li class="breadcrumb-item active">Using dnsmasq for your Homelab</li></ol>
+</nav><article class="post row surface"><div class="post-panel-wrapper">
+  <div class="post-panel d-flex flex-column">
+    <a id="sidebarToggler" class="action d-none d-lg-block" role="button">
+  <i class="fas fa-fw fa-expand-alt fa-rotate-45"></i>
+</a>
+  
+    
+
+    
+    
+    <a id="btnTOC" class="fas fa-fw fa-list-alt" data-bs-toggle="offcanvas" href="#offcanvasTOC" aria-controls="offcanvasTOC" role="button">
+</a>
+  </div>
+</div>
+<h1 class="post-title my-3">Using dnsmasq for your Homelab
+</h1><div class="post-meta mb-3"><span class="post-date me-2">
+    <i class="fas fa-fw fa-calendar-alt"></i>Mar 15, 2018
+  </span><span class="post-reading-time me-2">
+    <i class="fas fa-fw fa-coffee"></i>11 min read
+  </span><a href="https://mikepruett3.github.io/categories/homelab/" class="post-taxonomy">#Homelab</a><a href="https://mikepruett3.github.io/tags/dns/" class="post-taxonomy">#dns</a><a href="https://mikepruett3.github.io/tags/selfhosted/" class="post-taxonomy">#selfhosted</a></div>
+<div class="offcanvas offcanvas-end surface" tabindex="-1" id="offcanvasTOC" aria-labelledby="offcanvasTOCLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTOCLabel">Table Of Contents</h5>
+    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
+      <span class="fas fa-2x fa-fw fa-times"></span>
+    </a>
+  </div>
+  <div class="offcanvas-body">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#enter-pi-hole">Enter Pi-Hole</a></li>
+    <li><a href="#cant-leave-well-enough-alone">Can&rsquo;t leave well enough alone!</a></li>
+    <li><a href="#getting-ipxe-to-work-on-dnsmasq">Getting iPXE to work on dnsmasq</a></li>
+    <li><a href="#my-configuration-after-several-hours-of-rtfm">My Configuration after several hours of RTFM!</a></li>
+    <li><a href="#my-ipxe-configs">My iPXE Configs</a></li>
+    <li><a href="#conclusions">Conclusions</a></li>
+  </ul>
+</nav>
+  </div>
+</div><div class="post-content mb-3"><p>Like many of you, I run a homelab for a number of reasons. Not the least of which is for the following:</p>
+<ul>
+<li>Testing Configurations of Virtual Hypervisors</li>
+<li>Testing Software and Application Configurations</li>
+<li>A File Server for the Home</li>
+<li>Media Tools and Storage</li>
+</ul>
+<p>Mostly, my lab is for the latter&hellip; as I host a 22TB Local Media server in my Homelab. The Media is being hosted using Plex, my all-time favorite media server software. Plex takes my library, and allows me to be able to view it from anywhere!</p>
+<p>I also run a Pre-Execution Environment (PXE, or iPXE to be exact) for all of my Imaging needs. This has been running on a old Dell Optiplex 755 which I nabbed from work a few years ago. The Dell is not really powerful enough to run as a workstation, but IS powerful enough to host my Images, and my Nginx Reverse-Proxy (all this on only 2GB of ram!) &hellip;but I digress</p>
+<p>For the past few years, I have been running the bog-standard ISC DHCP server for my PXE needs. It runs really well on the old Optiplex, and has served me well. Up until recently&hellip;</p>
+<h2 id="enter-pi-hole">Enter Pi-Hole</h2>
+<p>Beginning this month, I began using <a href="https://pi-hole.net/" target="_blank">Pi-Hole</a>
+! This software (incase you are unaware), is an Ad-Blocker for your entire network. The project is very slick, and definitely works. The main component of Pi-Hole is to run a DNS server in your environment, which will block access to known advertizement servers that are queried from hosts on your network.</p>
+<p>In order to accomplish all of this on your local environment, Pi-Hole ships with a configurable DNS &amp; DHCP server called dnsmasq. This is really the first time I had used dnsmasq, and I was pretty impressed. Before this, I was only running DHCP internally&hellip; and forwarding all DNS requests to Google (8.8.8.8, 8.8.4.4.). By default, Pi-Hole disables dnsmasq&rsquo;s built-in DHCP server (thank you!), to not conflict with any existing DHCP servers on your network. Just change your existing DHCP server to hand out the IP address of your Pi-Hole server as the DNS server for your Pool. Fantastic!</p>
+<h2 id="cant-leave-well-enough-alone">Can&rsquo;t leave well enough alone!</h2>
+<p>At this point, I would have been fine to leave everything as is. I was blocking Ad&rsquo;s across my network, and was still able to use the ISC DHCP server for all of my iPXE needs. But I wanted just a little bit more!</p>
+<p>I really wanted to be able to automagically map hosts with active DHCP leases into a locally resolvable domain on my home network. With the current setup, this was not achievable. dnsmasq was unable to update a local zone with leases that it did not create.</p>
+<p>So&hellip; I know what I have to do! I have to replace ISC DHCP, with the DHCP server in dnsmasq. (easier said than done) I stopped the ISC service, and enabled the DHCP server in dnsmasq (Easily done on the PI-Hole admin page!) Everything seemed to be working just fine.</p>
+<p>Little did I know that I just broke one massive thing!</p>
+<h2 id="getting-ipxe-to-work-on-dnsmasq">Getting iPXE to work on dnsmasq</h2>
+<p>Yep, all was good except for the one thing I needed ISC for in the first place! I started changing a whole bunch of settings in dnsmasq, with no success.</p>
+<p>Using a VM to test, I could see PXE starting&hellip; and then fail almost immediately.</p>
+<p>dnsmasq uses a standard Linux services configuration setup, with a base configuration file <strong>/etc/dnsmasq.conf</strong>, and a <strong>/etc/dnsmasq.d</strong> directory, were you can write your custom configurations so they do not get overwritten by a software upgrade. (Modifying the existing configuration is a no-no!)</p>
+<p>Pi-Hole creates two new files in the <strong>/etc/dnsmasq.d</strong> directory, once you have configured both the DNS &amp; DHCP services.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">:/etc/dnsmasq.d$ ll
+total 16K
+-rw-r--r-- <span style="color:#ae81ff">1</span> root root 1.5K Mar <span style="color:#ae81ff">12</span> 23:25 01-pihole.conf
+-rw-r--r-- <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">483</span> Mar <span style="color:#ae81ff">12</span> 23:25 02-pihole-dhcp.conf
+</code></pre></div><p>In this directory, we are going to create a new file, called <strong>05-ipxe.conf</strong> for all of our iPXE changes.</p>
+<p>Ultimately, the issue was with handing out the <strong>undionly.kpxe</strong> file on netboot. By default, you only want to hand this file out once&hellip; and then once the iPXE client boots then hand out the correct ipxe file. This is called Chain-Loading, and its how you get iPXE to load without chaning the boot rom of each network card. (You can read more about this on the <a href="https://ipxe.org/" target="_blank">iPXE</a>
+ site.)</p>
+<p>Normally, using ISC DHCP this is how you would accomplish this&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"> <span style="color:#66d9ef">if</span> exists user-class and option user-class <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;iPXE&#34;</span> <span style="color:#f92672">{</span>
+      filename <span style="color:#e6db74">&#34;http://my.web.server/real_boot_script.php&#34;</span>;
+  <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+      filename <span style="color:#e6db74">&#34;undionly.kpxe&#34;</span>;
+  <span style="color:#f92672">}</span>
+</code></pre></div><p>Obviously this does not work with dnsmasq, as the configuration logic is different. Here is what I found on the iPXE forums that should accomplish this same thing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">enable-tftp
+tftp-root<span style="color:#f92672">=</span>/var/lib/tftpboot
+
+dhcp-match<span style="color:#f92672">=</span>IPXEBOOT,175
+dhcp-option<span style="color:#f92672">=</span>175,8:1:1
+dhcp-boot<span style="color:#f92672">=</span>tag:#IPXEBOOT,undionly.kpxe
+</code></pre></div><p>Now this does work to somewhat break the boot loop, but it does not take into effect loading the existing menu&rsquo;s or bootstrap iPXE configurations you may already have. How did I fix this?</p>
+<h2 id="my-configuration-after-several-hours-of-rtfm">My Configuration after several hours of RTFM!</h2>
+<p>Lets take a look at the configuration that I ultimately settled on&hellip;</p>
+<p><strong>/etc/dnsmasq.d/05-ipxe.cfg</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Enable dnsmasq-tftp and enable security</span>
+enable-tftp
+tftp-secure
+
+<span style="color:#75715e"># Point to correct tftpboot directory (default is /var/lib/tftpboot)</span>
+tftp-root<span style="color:#f92672">=</span>/var/lib/tftpboot
+
+<span style="color:#75715e"># Sets a tag for the appropriate bootloader</span>
+dhcp-match<span style="color:#f92672">=</span>set:efi-x86_64,option:client-arch,7
+dhcp-match<span style="color:#f92672">=</span>set:efi-x86_64,option:client-arch,9
+dhcp-match<span style="color:#f92672">=</span>set:efi-x86,option:client-arch,6
+dhcp-match<span style="color:#f92672">=</span>set:bios,option:client-arch,0
+
+<span style="color:#75715e"># Checks for iPXE Client Option 175</span>
+dhcp-match<span style="color:#f92672">=</span>set:ipxe,175
+
+<span style="color:#75715e"># Create a custom tag if BIOS and not iPXE</span>
+tag-if<span style="color:#f92672">=</span>set:ipxebios,tag:!ipxe,tag:bios
+
+<span style="color:#75715e"># Boot iPXE.efi if not BIOS and not iPXE</span>
+dhcp-boot<span style="color:#f92672">=</span>tag:!ipxe,ipxe.efi
+
+<span style="color:#75715e"># Boot undionly.kpxe if custom tag matches (BIOS and not iPXE)</span>
+dhcp-boot<span style="color:#f92672">=</span>tag:ipxebios,undionly.kpxe
+
+<span style="color:#75715e"># Everything else, boot boot.ipxe... which chain loads the regular boot iPXE menu</span>
+dhcp-boot<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;boot.ipxe&#34;</span>
+</code></pre></div><p>The first few lines enable dnsmasq&rsquo;s built-in TFTP server, and sets the tftp-secure. (Kind of an oxymoron!) The next option points to your TFTPBOOT directory.</p>
+<p>The next set of configurations set tags to match what type of PXE session is being run. If your host is connecting via EFI (either 64 or 32 bit), or BIOS boot (original PXE)&hellip; one of these &ldquo;tags&rdquo; is being populated.</p>
+<p>The next config line checks for the DHCP Option 175, and sets the ipxe tag. (Similar to the <strong>user-class</strong> and <strong>option user-class</strong> from ISC)</p>
+<p>Now we are creating a new tag, called <strong>ipxebios</strong> which is set only if the <strong>ipxe</strong> tag is empty, and the <strong>bios</strong> tag is populated. Believe it or not, this <strong>tag-if</strong> took me the most time to wrap my head around&hellip;</p>
+<p>Next, we are booting the ipxe.efi boot rom for any system that does not have the *<em>ipxe</em> tag (and not <strong>bios</strong> boot). This works for the hosts using EFI boot, instead of old PXE boot.</p>
+<p>Now we are loading the <strong>undionly.kpxe</strong> rom for those systems which did not match any of the previous tag matching. (This breaks the infinite PXE boot loop!)</p>
+<p>Finally, we are loading a <strong>boot.ipxe</strong> script, which chain loads my existing ipxe boot menu scripts from HTTP</p>
+<p><strong>/var/lib/tftpboot/boot.ipxe</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!ipxe
+</span><span style="color:#75715e"></span>
+chain http://&lt;my-ipxe-server&gt;/bootmenu.ipxe
+exit
+</code></pre></div><p>And thats really it! Now my dnsmasq server operates in the same fashion as the ISC DHCP server did. I was also able to remove the tftpd-hba service as well.</p>
+<h2 id="my-ipxe-configs">My iPXE Configs</h2>
+<p>Just for fun, I have also included all of my iPXE configs.</p>
+<p><strong>/var/www/html/bootmenu.ipxe</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!ipxe
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># Global variables used by all other iPXE scripts</span>
+set protocol http
+set server-ip 10.10.10.41
+set boot-dir boot
+set iso-dir iso
+set sources-dir sources
+set boot-url <span style="color:#e6db74">${</span>protocol<span style="color:#e6db74">}</span>://<span style="color:#e6db74">${</span>server-ip<span style="color:#e6db74">}</span>
+set menu-url <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/menu.ipxe
+
+<span style="color:#75715e"># Figure out if client is 64-bit capable</span>
+cpuid --ext <span style="color:#ae81ff">29</span> <span style="color:#f92672">&amp;&amp;</span> set arch x64 <span style="color:#f92672">||</span> set arch x86
+cpuid --ext <span style="color:#ae81ff">29</span> <span style="color:#f92672">&amp;&amp;</span> set archl amd64 <span style="color:#f92672">||</span> set archl i386
+
+<span style="color:#75715e"># Installer/ISO Versions</span>
+set memtest-ver 5.01
+set memtest-image memtest86+-<span style="color:#e6db74">${</span>memtest-ver<span style="color:#e6db74">}</span>.iso
+set spinrite-ver 6.0
+set spinrite-image spinrite-<span style="color:#e6db74">${</span>spinrite-ver<span style="color:#e6db74">}</span>.iso
+set sysrescue-ver 5.2.0
+set sysrescue-image systemrescuecd-x86-<span style="color:#e6db74">${</span>sysrescue-ver<span style="color:#e6db74">}</span>.iso
+set hdt-ver 0.3.6
+set hdt-image hdt-<span style="color:#e6db74">${</span>hdt-ver<span style="color:#e6db74">}</span>.iso
+set clonez-ver 2.5.2-31
+set clonez-image clonezilla-live-<span style="color:#e6db74">${</span>clonez-ver<span style="color:#e6db74">}</span>-<span style="color:#e6db74">${</span>archl<span style="color:#e6db74">}</span>.iso
+set dban-ver 2.3.0
+set dban-image dban-<span style="color:#e6db74">${</span>dban-ver<span style="color:#e6db74">}</span>_i586.iso
+set breakin-ver 4.26.1-53
+set breakin-image breakin-<span style="color:#e6db74">${</span>breakin-ver<span style="color:#e6db74">}</span>.iso
+set gparted-ver 0.30.0-1
+set gparted-image gparted-live-<span style="color:#e6db74">${</span>gparted-ver<span style="color:#e6db74">}</span>-<span style="color:#e6db74">${</span>archl<span style="color:#e6db74">}</span>.iso
+set ntpass-ver <span style="color:#ae81ff">140201</span>
+set ntpass-image cd<span style="color:#e6db74">${</span>ntpass-ver<span style="color:#e6db74">}</span>.iso
+
+<span style="color:#75715e"># Boot &lt;boot-url&gt;/menu.ipxe script if all other options have been exhausted</span>
+chain --autofree <span style="color:#e6db74">${</span>menu-url<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span>
+</code></pre></div><p><strong>/var/www/html/menu.ipxe</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!ipxe
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e"># Variables are specified in boot.ipxe.cfg</span>
+
+<span style="color:#75715e"># Some menu defaults</span>
+set menu-timeout <span style="color:#ae81ff">5000</span>
+set submenu-timeout <span style="color:#e6db74">${</span>menu-timeout<span style="color:#e6db74">}</span>
+isset <span style="color:#e6db74">${</span>menu-default<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> set menu-default exit
+
+<span style="color:#75715e">###################### MAIN MENU ####################################</span>
+
+:start
+menu iPXE boot menu <span style="color:#66d9ef">for</span> <span style="color:#e6db74">${</span>initiator-iqn<span style="color:#e6db74">}</span>
+item --gap --             ------------------------- Operating systems ------------------------------
+item --key <span style="color:#ae81ff">1</span> menu-instwin Install Windows
+item --gap --             ------------------------- Tools and utilities ----------------------------
+item --key r menu-recovery Recovery tools...
+item --key d menu-diag    Diagnostics tools...
+<span style="color:#75715e">#item --key p pxelinux     Load PXELinux menu</span>
+item --gap --             ------------------------- Advanced options -------------------------------
+item --key c config       Configure settings
+item shell                Drop to iPXE shell
+item reboot               Reboot computer
+item
+item --key x exit         Exit iPXE and <span style="color:#66d9ef">continue</span> BIOS boot
+choose --timeout <span style="color:#e6db74">${</span>menu-timeout<span style="color:#e6db74">}</span> --default <span style="color:#e6db74">${</span>menu-default<span style="color:#e6db74">}</span> selected <span style="color:#f92672">||</span> goto cancel
+set menu-timeout <span style="color:#ae81ff">0</span>
+goto <span style="color:#e6db74">${</span>selected<span style="color:#e6db74">}</span>
+
+:cancel
+echo You cancelled the menu, dropping you to a shell
+
+:shell
+echo Type <span style="color:#e6db74">&#39;exit&#39;</span> to get the back to the menu
+shell
+set menu-timeout <span style="color:#ae81ff">0</span>
+set submenu-timeout <span style="color:#ae81ff">0</span>
+goto start
+
+:failed
+echo Booting failed, dropping to shell
+goto shell
+
+:reboot
+reboot
+
+:exit
+exit
+
+:config
+config
+goto start
+
+:back
+set submenu-timeout <span style="color:#ae81ff">0</span>
+clear submenu-default
+goto start
+
+:pxelinux
+set 210:string tftp://<span style="color:#e6db74">${</span>next-server<span style="color:#e6db74">}</span>/
+chain <span style="color:#e6db74">${</span>210:string<span style="color:#e6db74">}</span>pxelinux.0 <span style="color:#f92672">||</span> goto failed
+goto start
+
+<span style="color:#75715e">###################### INSTALL WINDOWS MENU ################################</span>
+:menu-instwin
+menu Install Windows
+item windows10       Install Windows <span style="color:#ae81ff">10</span> via PXE
+item win10iso        Install Windows <span style="color:#ae81ff">10</span> via ISO
+item
+item --key 0x08 back Back to top menu...
+iseq <span style="color:#e6db74">${</span>menu-default<span style="color:#e6db74">}</span> menu-instwin <span style="color:#f92672">&amp;&amp;</span> isset <span style="color:#e6db74">${</span>submenu-default<span style="color:#e6db74">}</span> <span style="color:#f92672">&amp;&amp;</span> goto menu-instwin-timed <span style="color:#f92672">||</span>
+choose selected <span style="color:#f92672">&amp;&amp;</span> goto <span style="color:#e6db74">${</span>selected<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> goto start
+:menu-instwin-timed
+choose --timeout <span style="color:#e6db74">${</span>submenu-timeout<span style="color:#e6db74">}</span> --default <span style="color:#e6db74">${</span>submenu-default<span style="color:#e6db74">}</span> selected <span style="color:#f92672">&amp;&amp;</span> goto <span style="color:#e6db74">${</span>selected<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> goto start
+
+:windows10
+echo Booting Windows <span style="color:#ae81ff">10</span> Installer from Boot Server - <span style="color:#e6db74">${</span>boot-server<span style="color:#e6db74">}</span>
+kernel <span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/wimboot
+initrd <span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/bcd                     BCD
+initrd <span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/boot.sdi                boot.sdi
+initrd <span style="color:#e6db74">${</span>sources-dir<span style="color:#e6db74">}</span>/win10.<span style="color:#e6db74">${</span>arch<span style="color:#e6db74">}</span>.boot.wim   boot.wim
+boot
+goto start
+
+:win10iso
+echo Booting Windows <span style="color:#ae81ff">10</span> ISO Installer
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/WIN10<span style="color:#e6db74">${</span>arch<span style="color:#e6db74">}</span>.iso
+chain <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk iso raw <span style="color:#f92672">||</span> goto failed
+goto start
+
+<span style="color:#75715e">###################### RECOVERY MENU ################################</span>
+
+:menu-recovery
+menu Recovery tools
+item sysrcd          SystemRescueCD v<span style="color:#e6db74">${</span>sysrescue-ver<span style="color:#e6db74">}</span>
+item spinrite        SpinRite v<span style="color:#e6db74">${</span>spinrite-ver<span style="color:#e6db74">}</span>
+item clonezilla      CloneZilla v<span style="color:#e6db74">${</span>clonez-ver<span style="color:#e6db74">}</span>
+item ntpass          NT Offile Password Recovery v<span style="color:#e6db74">${</span>ntpass-ver<span style="color:#e6db74">}</span>
+item
+item --key 0x08 back Back to top menu...
+iseq <span style="color:#e6db74">${</span>menu-default<span style="color:#e6db74">}</span> menu-recovery <span style="color:#f92672">&amp;&amp;</span> isset <span style="color:#e6db74">${</span>submenu-default<span style="color:#e6db74">}</span> <span style="color:#f92672">&amp;&amp;</span> goto menu-recovery-timed <span style="color:#f92672">||</span>
+choose selected <span style="color:#f92672">&amp;&amp;</span> goto <span style="color:#e6db74">${</span>selected<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> goto start
+:menu-recovery-timed
+choose --timeout <span style="color:#e6db74">${</span>submenu-timeout<span style="color:#e6db74">}</span> --default <span style="color:#e6db74">${</span>submenu-default<span style="color:#e6db74">}</span> selected <span style="color:#f92672">&amp;&amp;</span> goto <span style="color:#e6db74">${</span>selected<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> goto start
+
+:spinrite
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>spinrite-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+imgargs memdisk iso raw <span style="color:#f92672">||</span> read void
+boot <span style="color:#f92672">||</span> goto failed
+goto start
+
+:sysrcd
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>sysrescue-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+imgargs memdisk iso raw <span style="color:#f92672">||</span> read void
+boot <span style="color:#f92672">||</span> goto failed
+goto start
+
+:clonezilla
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>clonez-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+imgargs memdisk iso raw <span style="color:#f92672">||</span> read void
+boot <span style="color:#f92672">||</span> goto failed
+goto start
+
+:ntpass
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>ntpass-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+imgargs memdisk iso raw <span style="color:#f92672">||</span> read void
+boot <span style="color:#f92672">||</span> goto failed
+goto start
+
+<span style="color:#75715e">###################### DIAGNOSTICS MENU #############################</span>
+
+:menu-diag
+menu Diagnostic tools
+item gparted       GParted v<span style="color:#e6db74">${</span>gparted-ver<span style="color:#e6db74">}</span>
+item hdt           Hardware Detection Tool v<span style="color:#e6db74">${</span>hdt-ver<span style="color:#e6db74">}</span>
+item memtest       Memtest86+ v<span style="color:#e6db74">${</span>memtest-ver<span style="color:#e6db74">}</span>
+item breakin       Breakin v<span style="color:#e6db74">${</span>breakin-ver<span style="color:#e6db74">}</span>
+item dban          Dariks Boot and Nuke v<span style="color:#e6db74">${</span>dban-ver<span style="color:#e6db74">}</span>
+item
+item --key 0x08 back Back to top menu...
+iseq <span style="color:#e6db74">${</span>menu-default<span style="color:#e6db74">}</span> menu-diag <span style="color:#f92672">&amp;&amp;</span> isset <span style="color:#e6db74">${</span>submenu-default<span style="color:#e6db74">}</span> <span style="color:#f92672">&amp;&amp;</span> goto menu-diag-timed <span style="color:#f92672">||</span>
+choose selected <span style="color:#f92672">&amp;&amp;</span> goto <span style="color:#e6db74">${</span>selected<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> goto start
+:menu-diag-timed
+choose --timeout <span style="color:#e6db74">${</span>submenu-timeout<span style="color:#e6db74">}</span> --default <span style="color:#e6db74">${</span>submenu-default<span style="color:#e6db74">}</span> selected <span style="color:#f92672">&amp;&amp;</span> goto <span style="color:#e6db74">${</span>selected<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> goto start
+
+:hdt
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>hdt-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+imgargs memdisk iso raw <span style="color:#f92672">||</span> read void
+boot <span style="color:#f92672">||</span> read void
+goto start
+
+:memtest
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>memtest-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+imgargs memdisk iso raw <span style="color:#f92672">||</span> read void
+boot <span style="color:#f92672">||</span> read void
+goto start
+
+:breakin
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>breakin-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+imgargs memdisk iso raw <span style="color:#f92672">||</span> read void
+boot <span style="color:#f92672">||</span> goto failed
+goto start
+
+:dban
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>dban-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+<span style="color:#75715e">#imgargs memdisk iso raw || read void</span>
+imgargs memdisk iso raw DBAN.BZI nuke<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;dwipe --method gutmann --rounds 2 --verify last&#34;</span> silent vga<span style="color:#f92672">=</span><span style="color:#ae81ff">785</span>
+boot <span style="color:#f92672">||</span> goto failed
+goto start
+
+:gparted
+kernel <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>boot-dir<span style="color:#e6db74">}</span>/memdisk <span style="color:#f92672">||</span> read void
+initrd <span style="color:#e6db74">${</span>boot-url<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>iso-dir<span style="color:#e6db74">}</span>/<span style="color:#e6db74">${</span>gparted-image<span style="color:#e6db74">}</span> <span style="color:#f92672">||</span> read void
+imgargs memdisk iso raw <span style="color:#f92672">||</span> read void
+boot <span style="color:#f92672">||</span> goto failed
+goto start
+
+</code></pre></div><p>There is a lot going on in this boot menu, most of which does not work over EFI! I leave EFI boot on for testing, but most of my hosts still use good old BIOS PXE boot. It just works.</p>
+<p>I hope to have EFI fully fleshed out soon enough, but the fact that memdisk does not function in the EFI shell&hellip; that really breaks most of my menu items!</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>There is a lot of ideas and concepts being thrown around in this post, and I fully expect that this post is really only usefull for a mere tenth of you reading it.</p>
+<p>If anyone has any questions about this setup, please let me know. If you’d like to send me an e-mail, you can reach me at mpruett at nixdevil dot com. Also on Twitter, and Reddit (/u/torafuma).</p>
+</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
+  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
+      <a href="https://mikepruett3.github.io/posts/new-domain-new-rules/">New Domain, New Rules
+</a>
+    </div></div>
+  <div class="post-nav flex-row-reverse"></div>
+</div></article><div class="post-comments surface row"></div></div>
+</div><aside class="col-lg-4 sidebar d-flex">
+  <div class="container"><section class="profile surface row text-center">
+  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src="https://mikepruett3.github.io/uploads/avatar.jpg" alt="Mike Pruett" loading="lazy"></div>
+  <div class="col-12 profile-meta"><div class="profile-name">Mike Pruett</div><div class="profile-bio">A haven for Unix &amp; Linux deviants</div><div class="profile-company"><i class="fas fa-fw fa-building"></i>Nixdevil.com</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Texas</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="https://mikepruett3.github.io/about/">About</a></div></div>
+</section>
+  <section class="recent-posts row surface">
+  <h4>Recent Posts</h4>
+  <ul><li><a href="https://mikepruett3.github.io/posts/dnsmasq-for-homelab/">Using dnsmasq for your Homelab
+</a></li><li><a href="https://mikepruett3.github.io/posts/new-domain-new-rules/">New Domain, New Rules
+</a></li><li><a href="https://mikepruett3.github.io/posts/old-fortune-city-site/">Old Fortune City Site
+</a></li><li><a href="https://mikepruett3.github.io/posts/evolution-of-storage/">Evolution of Storage
+</a></li><li><a href="https://mikepruett3.github.io/posts/google-voice/">Google Voice
+</a></li></ul>
+</section><section class="taxonomy-categories row surface">
+      <h4>
+        <a href="https://mikepruett3.github.io/categories">Categories</a>
+      </h4>
+      <div><a href="https://mikepruett3.github.io/categories/updates/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Updates">
+          Updates <span class="badge rounded-pill">22</span>
+        </a><a href="https://mikepruett3.github.io/categories/open-source/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Open Source">
+          Open Source <span class="badge rounded-pill">9</span>
+        </a><a href="https://mikepruett3.github.io/categories/storage/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Storage">
+          Storage <span class="badge rounded-pill">9</span>
+        </a><a href="https://mikepruett3.github.io/categories/media/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Media">
+          Media <span class="badge rounded-pill">6</span>
+        </a><a href="https://mikepruett3.github.io/categories/games/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Games">
+          Games <span class="badge rounded-pill">4</span>
+        </a><a href="https://mikepruett3.github.io/categories/homelab/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Homelab">
+          Homelab <span class="badge rounded-pill">3</span>
+        </a></div>
+    </section><section class="taxonomy-tags row surface">
+      <h4>
+        <a href="https://mikepruett3.github.io/tags">Tags</a>
+      </h4>
+      <div><a href="https://mikepruett3.github.io/tags/website/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="website">
+          website <span class="badge rounded-pill">9</span>
+        </a><a href="https://mikepruett3.github.io/tags/security/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="security">
+          security <span class="badge rounded-pill">7</span>
+        </a><a href="https://mikepruett3.github.io/tags/tape/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="tape">
+          tape <span class="badge rounded-pill">7</span>
+        </a><a href="https://mikepruett3.github.io/tags/life/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="life">
+          life <span class="badge rounded-pill">6</span>
+        </a><a href="https://mikepruett3.github.io/tags/videos/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="videos">
+          videos <span class="badge rounded-pill">6</span>
+        </a><a href="https://mikepruett3.github.io/tags/movies/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="movies">
+          movies <span class="badge rounded-pill">5</span>
+        </a><a href="https://mikepruett3.github.io/tags/symantec/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="symantec">
+          symantec <span class="badge rounded-pill">5</span>
+        </a><a href="https://mikepruett3.github.io/tags/veritas/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="veritas">
+          veritas <span class="badge rounded-pill">5</span>
+        </a><a href="https://mikepruett3.github.io/tags/asterisk/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="asterisk">
+          asterisk <span class="badge rounded-pill">4</span>
+        </a><a href="https://mikepruett3.github.io/tags/hacking/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="hacking">
+          hacking <span class="badge rounded-pill">4</span>
+        </a></div>
+    </section></div>
+</aside>
+</div>
+    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://github.com/mikepruett3" title="GitHub">
+        <i class="fa-fw fa-2x fab fa-github"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/mpruett" title="LinkedIn">
+        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.reddit.com/user/Human_Cartographer" title="Reddit">
+        <i class="fa-fw fa-2x fab fa-reddit"></i>
+      </a>
+    </li><li class="nav-item">
+      <a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCZ-i9SPvPLMQmk1sognhu_A" title="Youtube">
+        <i class="fa-fw fa-2x fab fa-youtube"></i>
+      </a>
+    </li></nav>
+<div class="copyright mb-2">
+  
+</div>
+<div class="powered-by mb-2">
+  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+</div></footer>
+<a id="btnScrollToTop" class="btn-scroll-to-top">
+  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+</a>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>internet on A haven for Unix &amp; Linux deviants</title>
+    <link>https://mikepruett3.github.io/tags/internet/</link>
+    <description>Recent content in internet on A haven for Unix &amp; Linux deviants</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Aug 2009 03:23:59 +0000</lastBuildDate><atom:link href="https://mikepruett3.github.io/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whats up all!!</title>
+      <link>https://mikepruett3.github.io/posts/whats-up-all/</link>
+      <pubDate>Sat, 01 Aug 2009 03:23:59 +0000</pubDate>
+      
+      <guid>https://mikepruett3.github.io/posts/whats-up-all/</guid>
+      <description>I am still here. Thankfully my hosting company got their act&amp;rsquo;s together, and now we have plenty of bandwith to support this blog. Recently post have been just my Delicious bookmarks, which are posted to the blog on a nightly basis. (I will do a follow-up post on how to do that.)
+Just an update of what I am working on&amp;hellip;
+ Upgrading our BlueCoat SG Proxy from an SG400 to a SG510.</description>
+    </item>
+    
+    <item>
+      <title>VisitorVille</title>
+      <link>https://mikepruett3.github.io/posts/visitorville/</link>
+      <pubDate>Wed, 09 Jun 2004 19:54:00 +0000</pubDate>
+      
+      <guid>https://mikepruett3.github.io/posts/visitorville/</guid>
+      <description>This thing is pretty cool.. check it out. VisitorVilleWill need to update the website to include this!</description>
+    </item>
+    
+    <item>
+      <title>Speakeasy Woes...</title>
+      <link>https://mikepruett3.github.io/posts/speakeasy-woes/</link>
+      <pubDate>Thu, 03 Jun 2004 08:09:00 +0000</pubDate>
+      
+      <guid>https://mikepruett3.github.io/posts/speakeasy-woes/</guid>
+      <description>Speakeasy SUX right now.
+I&amp;rsquo;m not very thrilled! :(
+I am having recurring problems where I keep loosing sync on new 6.0/768 install at my house.
+Covad is comming to do a line test. Probably going to tell me that I am 14,999.8 miles from the C.O., and to suck it up and like it.
+If that happens, must convince my boss to let me expense a wireless T-1.</description>
+    </item>
+    
+  </channel>
+</rss>

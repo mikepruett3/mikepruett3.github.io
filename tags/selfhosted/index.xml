@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>selfhosted on A haven for Unix &amp; Linux deviants</title>
+    <link>https://mikepruett3.github.io/tags/selfhosted/</link>
+    <description>Recent content in selfhosted on A haven for Unix &amp; Linux deviants</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 Mar 2018 13:23:01 +0000</lastBuildDate><atom:link href="https://mikepruett3.github.io/tags/selfhosted/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using dnsmasq for your Homelab</title>
+      <link>https://mikepruett3.github.io/posts/dnsmasq-for-homelab/</link>
+      <pubDate>Thu, 15 Mar 2018 13:23:01 +0000</pubDate>
+      
+      <guid>https://mikepruett3.github.io/posts/dnsmasq-for-homelab/</guid>
+      <description>Like many of you, I run a homelab for a number of reasons. Not the least of which is for the following:
+ Testing Configurations of Virtual Hypervisors Testing Software and Application Configurations A File Server for the Home Media Tools and Storage  Mostly, my lab is for the latter&amp;hellip; as I host a 22TB Local Media server in my Homelab. The Media is being hosted using Plex, my all-time favorite media server software.</description>
+    </item>
+    
+  </channel>
+</rss>

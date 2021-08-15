@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://www.fortunecity.com/tatooine/swampthing/104/top.htm -->
+<html>
+	<head>
+		<title>Navigation Bar</title>
+		<!-- <base target="content"> -->
+		<script language="JavaScript">
+			if (document.images) {
+				toc1on = new Image;
+				toc1on.src = "images/create-inv.jpg";
+				toc1off = new Image;
+				toc1off.src = "images/create.jpg";
+				toc2on = new Image;
+				toc2on.src = "images/resume-inv.jpg";
+				toc2off = new Image;
+				toc2off.src = "images/resume.jpg";
+				toc3on = new Image;
+				toc3on.src = "images/links-inv.jpg";
+				toc3off = new Image;
+				toc3off.src = "images/links.jpg";
+				toc4on = new Image;
+				toc4on.src = "images/about-inv.jpg";
+				toc4off = new Image;
+				toc4off.src = "images/about.jpg";
+			}
+			function img_act(imgName) {
+				if (document.images) {
+					imgOn = eval(imgName + "on.src");
+					document[imgName].src = imgOn;
+				}
+			}
+			function img_inact(imgName) {
+				if (document.images) {
+					imgOff = eval(imgName + "off.src");
+					document[imgName].src = imgOff;
+				}
+			}
+		</script>
+		<style type="text/css">
+			img{
+				border:0;
+				margin:0;
+				padding:5px 0px 0px;
+				float:left;
+			}
+		</style>
+	</head>
+
+	<body bgColor=#000000 text=#000000>
+		<a href="welcome.htm" target="bottom"><img src="images/lead.jpg"></a>
+		<img src="images/blank.jpg">
+		<img src="images/blank.jpg">
+		<a href="create.htm" target="bottom" onmouseover="img_act('toc1'); return true;" onmouseout="img_inact('toc1')"><IMG src="images/create.jpg" name="toc1"></a>
+		<a href="blank.htm" target="bottom" onmouseover="img_act('toc2'); return true;" onmouseout="img_inact('toc2')"><IMG src="images/resume.jpg" name="toc2"></a>
+		<a href="links.htm" target="bottom"  onmouseover="img_act('toc3'); return true;" onmouseout="img_inact('toc3')"><IMG src="images/links.jpg" name="toc3"></a>
+		<a href="blank.htm" target="bottom"  onmouseover="img_act('toc4'); return true;" onmouseout="img_inact('toc4')"><IMG src="images/about.jpg" name="toc4"></a>
+		<a href="/" target="_parent"><IMG src="images/back.jpg"></a>
+	</body>
+</html>
