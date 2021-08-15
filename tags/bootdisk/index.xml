@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>bootdisk on A haven for Unix &amp; Linux deviants</title>
-    <link>https://mikepruett3.github.io/tags/bootdisk/</link>
+    <link>https://www.nixdevil.com/tags/bootdisk/</link>
     <description>Recent content in bootdisk on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 May 2004 20:54:00 +0000</lastBuildDate><atom:link href="https://mikepruett3.github.io/tags/bootdisk/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 May 2004 20:54:00 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/bootdisk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Knoppix Disk Image</title>
-      <link>https://mikepruett3.github.io/posts/knoppix-disk-image/</link>
+      <link>https://www.nixdevil.com/posts/knoppix-disk-image/</link>
       <pubDate>Tue, 25 May 2004 20:54:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/knoppix-disk-image/</guid>
+      <guid>https://www.nixdevil.com/posts/knoppix-disk-image/</guid>
       <description>I discovered today that my beloved Knoppix Linux Live OS Boot Disk can do something quite unique..
 It can make a disk image of a Windows 2000/XP harddrive&amp;hellip;
 DOPE! 😃

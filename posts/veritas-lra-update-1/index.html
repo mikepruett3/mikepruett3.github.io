@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Veritas RedHat Linux Remote Agent - Update - A haven for Unix & Linux deviants</title><link rel="apple-touch-icon" href="https://mikepruett3.github.io/images/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://mikepruett3.github.io/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://mikepruett3.github.io/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="https://mikepruett3.github.io/images/favicons/manifest.json">
-<link rel="icon" href="https://mikepruett3.github.io/images/favicons/favicon.ico">
+    <title>Veritas RedHat Linux Remote Agent - Update - A haven for Unix & Linux deviants</title><link rel="apple-touch-icon" href="https://www.nixdevil.com/images/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://www.nixdevil.com/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://www.nixdevil.com/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://www.nixdevil.com/images/favicons/manifest.json">
+<link rel="icon" href="https://www.nixdevil.com/images/favicons/favicon.ico">
 <meta name="keywords" content="" />
 <meta name="description" content="" /><meta itemprop="name" content="Veritas RedHat Linux Remote Agent - Update">
 <meta itemprop="description" content="Still not working as of yet. I have been on the Veritas support forums for 2 days now. I posted a question to there technical staff, and I got one responce:
@@ -22,7 +22,7 @@ The problem is, I can backup anything from the RHEL3 server&hellip; but I cannot
  I&rsquo;ve update the RHEL server with the patch, and still no success.
 The problem is, I can backup anything from the RHEL3 server&hellip; but I cannot restore it back to the server." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mikepruett3.github.io/posts/veritas-lra-update-1/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://www.nixdevil.com/posts/veritas-lra-update-1/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2005-06-10T23:14:00+00:00" />
 <meta property="article:modified_time" content="2005-06-10T23:14:00+00:00" />
 
@@ -32,30 +32,30 @@ The problem is, I can backup anything from the RHEL3 server&hellip; but I cannot
  Update the client with a patch.
  I&rsquo;ve update the RHEL server with the patch, and still no success.
 The problem is, I can backup anything from the RHEL3 server&hellip; but I cannot restore it back to the server."/>
-<meta data-name="palette" content="green"><link rel=stylesheet href="https://mikepruett3.github.io/css/bundle.min.f2209a83bfa7f733540426e3abe2edccef95ac63c8535e2b3750caccec2f85ed.css" integrity="sha256-8iCag7&#43;n9zNUBCbjq&#43;LtzO&#43;VrGPIU14rN1DKzOwvhe0=" crossorigin="anonymous"><script src="https://mikepruett3.github.io/js/bundle.min.7e0d9da422e1785c9d1474d421aa85bee81bb5aeb873bda0beaf515b6f9b039f.js" integrity="sha256-fg2dpCLheFydFHTUIaqFvugbta64c72gvq9RW2&#43;bA58=" crossorigin="anonymous"></script><script defer src="https://mikepruett3.github.io/js/katex.efb27591b98224b170a1dcd34b1b5ef4a9af1ae7a0ac31442742e776e52b60f9.js" integrity="sha256-77J1kbmCJLFwodzTSxte9KmvGuegrDFEJ0LnduUrYPk=" crossorigin="anonymous"></script>
+<meta data-name="palette" content="green"><link rel=stylesheet href="https://www.nixdevil.com/css/bundle.min.f2209a83bfa7f733540426e3abe2edccef95ac63c8535e2b3750caccec2f85ed.css" integrity="sha256-8iCag7&#43;n9zNUBCbjq&#43;LtzO&#43;VrGPIU14rN1DKzOwvhe0=" crossorigin="anonymous"><script src="https://www.nixdevil.com/js/bundle.min.7e0d9da422e1785c9d1474d421aa85bee81bb5aeb873bda0beaf515b6f9b039f.js" integrity="sha256-fg2dpCLheFydFHTUIaqFvugbta64c72gvq9RW2&#43;bA58=" crossorigin="anonymous"></script><script defer src="https://www.nixdevil.com/js/katex.efb27591b98224b170a1dcd34b1b5ef4a9af1ae7a0ac31442742e776e52b60f9.js" integrity="sha256-77J1kbmCJLFwodzTSxte9KmvGuegrDFEJ0LnduUrYPk=" crossorigin="anonymous"></script>
 </head><body class="mode-dark"><header><nav class="navbar navbar-expand-xl fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="https://mikepruett3.github.io/">
-      <img class="logo" alt="Logo" src="https://mikepruett3.github.io/images/logo.webp" loading="lazy"></a>
+    <a class="navbar-brand" href="https://www.nixdevil.com/">
+      <img class="logo" alt="Logo" src="https://www.nixdevil.com/images/logo.webp" loading="lazy"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://mikepruett3.github.io/search">
+      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://www.nixdevil.com/search">
   <div class="input-group input-group-sm">
     <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
     <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
   </div>
 </form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
-          <a class="nav-link" href="https://mikepruett3.github.io/archives/">
+          <a class="nav-link" href="https://www.nixdevil.com/archives/">
             <i class="fas fa-fw fa-file-archive"></i>Archives
           </a>
         </li><li class="nav-item">
-          <a class="nav-link" href="https://mikepruett3.github.io/categories/">
+          <a class="nav-link" href="https://www.nixdevil.com/categories/">
             <i class="fas fa-fw fa-folder"></i>Categories
           </a>
         </li><li class="nav-item">
-          <a class="nav-link" href="https://mikepruett3.github.io/tags/">
+          <a class="nav-link" href="https://www.nixdevil.com/tags/">
             <i class="fas fa-fw fa-tags"></i>Tags
           </a>
         </li><li class="nav-item">
@@ -121,7 +121,7 @@ The problem is, I can backup anything from the RHEL3 server&hellip; but I cannot
       <div class="row content">
 <div class="col-lg-8">
   <div class="container"><nav class="row" aria-label="breadcrumb">
-  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://mikepruett3.github.io/">Home</a></li><li class="breadcrumb-item"><a href="https://mikepruett3.github.io/posts/">Posts</a></li><li class="breadcrumb-item active">Veritas RedHat Linux Remote Agent - Update</li></ol>
+  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://www.nixdevil.com/">Home</a></li><li class="breadcrumb-item"><a href="https://www.nixdevil.com/posts/">Posts</a></li><li class="breadcrumb-item active">Veritas RedHat Linux Remote Agent - Update</li></ol>
 </nav><article class="post row surface"><div class="post-panel-wrapper">
   <div class="post-panel d-flex flex-column">
     <a id="sidebarToggler" class="action d-none d-lg-block" role="button">
@@ -140,7 +140,7 @@ The problem is, I can backup anything from the RHEL3 server&hellip; but I cannot
     <i class="fas fa-fw fa-calendar-alt"></i>Jun 10, 2005
   </span><span class="post-reading-time me-2">
     <i class="fas fa-fw fa-coffee"></i>1 min read
-  </span><a href="https://mikepruett3.github.io/categories/storage/" class="post-taxonomy">#Storage</a><a href="https://mikepruett3.github.io/tags/symantec/" class="post-taxonomy">#symantec</a><a href="https://mikepruett3.github.io/tags/tape/" class="post-taxonomy">#tape</a><a href="https://mikepruett3.github.io/tags/veritas/" class="post-taxonomy">#veritas</a></div>
+  </span><a href="https://www.nixdevil.com/categories/storage/" class="post-taxonomy">#Storage</a><a href="https://www.nixdevil.com/tags/symantec/" class="post-taxonomy">#symantec</a><a href="https://www.nixdevil.com/tags/tape/" class="post-taxonomy">#tape</a><a href="https://www.nixdevil.com/tags/veritas/" class="post-taxonomy">#veritas</a></div>
 <div class="post-content mb-3"><p>Still not working as of yet. I have been on the Veritas support forums for 2 days now. I posted a question to there technical staff, and I got one responce:</p>
 <blockquote>
 <p>Update the client with a patch.</p>
@@ -150,72 +150,72 @@ The problem is, I can backup anything from the RHEL3 server&hellip; but I cannot
 <p>I will continue to work on this&hellip; there <strong>MUST</strong> be a way!!</p>
 </div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
   <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://mikepruett3.github.io/posts/veritas-remote-agent-for-linux/">Veritas Remote Agent for Linux
+      <a href="https://www.nixdevil.com/posts/veritas-remote-agent-for-linux/">Veritas Remote Agent for Linux
 </a>
     </div></div>
   <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-      <a href="https://mikepruett3.github.io/posts/veritas-lra-update-2/">Veritas RedHat Linux Remote Agent – Update (again!)
+      <a href="https://www.nixdevil.com/posts/veritas-lra-update-2/">Veritas RedHat Linux Remote Agent – Update (again!)
 </a>
     </div></div>
 </div><section class="related-posts">
     <h3>Related Posts</h3>
-    <ul class="related-posts"><li><a href="https://mikepruett3.github.io/posts/veritas-remote-agent-for-linux/">Veritas Remote Agent for Linux
-</a></li><li><a href="https://mikepruett3.github.io/posts/storagetek-streamline-sl8500/">StorageTek StreamLine SL8500
+    <ul class="related-posts"><li><a href="https://www.nixdevil.com/posts/veritas-remote-agent-for-linux/">Veritas Remote Agent for Linux
+</a></li><li><a href="https://www.nixdevil.com/posts/storagetek-streamline-sl8500/">StorageTek StreamLine SL8500
 </a></li></ul>
   </section></article><div class="post-comments surface row"></div></div>
 </div><aside class="col-lg-4 sidebar d-flex">
   <div class="container"><section class="profile surface row text-center">
-  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src="https://mikepruett3.github.io/uploads/avatar.jpg" alt="Mike Pruett" loading="lazy"></div>
-  <div class="col-12 profile-meta"><div class="profile-name">Mike Pruett</div><div class="profile-bio">Super passionate about Linux, Open Source Software, Beer, and Life.</div><div class="profile-company"><i class="fas fa-fw fa-building"></i>Nixdevil.com</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Texas</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="https://mikepruett3.github.io/about/">About</a></div></div>
+  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src="https://www.nixdevil.com/uploads/avatar.jpg" alt="Mike Pruett" loading="lazy"></div>
+  <div class="col-12 profile-meta"><div class="profile-name">Mike Pruett</div><div class="profile-bio">Super passionate about Linux, Open Source Software, Beer, and Life.</div><div class="profile-company"><i class="fas fa-fw fa-building"></i>Nixdevil.com</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Texas</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="https://www.nixdevil.com/about/">About</a></div></div>
 </section>
   <section class="recent-posts row surface">
   <h4>Recent Posts</h4>
-  <ul><li><a href="https://mikepruett3.github.io/posts/dnsmasq-for-homelab/">Using dnsmasq for your Homelab
-</a></li><li><a href="https://mikepruett3.github.io/posts/new-domain-new-rules/">New Domain, New Rules
-</a></li><li><a href="https://mikepruett3.github.io/posts/old-fortune-city-site/">Old Fortune City Site
-</a></li><li><a href="https://mikepruett3.github.io/posts/evolution-of-storage/">Evolution of Storage
-</a></li><li><a href="https://mikepruett3.github.io/posts/google-voice/">Google Voice
+  <ul><li><a href="https://www.nixdevil.com/posts/dnsmasq-for-homelab/">Using dnsmasq for your Homelab
+</a></li><li><a href="https://www.nixdevil.com/posts/new-domain-new-rules/">New Domain, New Rules
+</a></li><li><a href="https://www.nixdevil.com/posts/old-fortune-city-site/">Old Fortune City Site
+</a></li><li><a href="https://www.nixdevil.com/posts/evolution-of-storage/">Evolution of Storage
+</a></li><li><a href="https://www.nixdevil.com/posts/google-voice/">Google Voice
 </a></li></ul>
 </section><section class="taxonomy-categories row surface">
       <h4>
-        <a href="https://mikepruett3.github.io/categories">Categories</a>
+        <a href="https://www.nixdevil.com/categories">Categories</a>
       </h4>
-      <div><a href="https://mikepruett3.github.io/categories/updates/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Updates">
+      <div><a href="https://www.nixdevil.com/categories/updates/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Updates">
           Updates <span class="badge rounded-pill">22</span>
-        </a><a href="https://mikepruett3.github.io/categories/open-source/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Open Source">
+        </a><a href="https://www.nixdevil.com/categories/open-source/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Open Source">
           Open Source <span class="badge rounded-pill">9</span>
-        </a><a href="https://mikepruett3.github.io/categories/storage/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Storage">
+        </a><a href="https://www.nixdevil.com/categories/storage/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Storage">
           Storage <span class="badge rounded-pill">9</span>
-        </a><a href="https://mikepruett3.github.io/categories/media/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Media">
+        </a><a href="https://www.nixdevil.com/categories/media/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Media">
           Media <span class="badge rounded-pill">6</span>
-        </a><a href="https://mikepruett3.github.io/categories/games/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Games">
+        </a><a href="https://www.nixdevil.com/categories/games/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Games">
           Games <span class="badge rounded-pill">4</span>
-        </a><a href="https://mikepruett3.github.io/categories/homelab/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Homelab">
+        </a><a href="https://www.nixdevil.com/categories/homelab/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Homelab">
           Homelab <span class="badge rounded-pill">3</span>
         </a></div>
     </section><section class="taxonomy-tags row surface">
       <h4>
-        <a href="https://mikepruett3.github.io/tags">Tags</a>
+        <a href="https://www.nixdevil.com/tags">Tags</a>
       </h4>
-      <div><a href="https://mikepruett3.github.io/tags/website/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="website">
+      <div><a href="https://www.nixdevil.com/tags/website/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="website">
           website <span class="badge rounded-pill">9</span>
-        </a><a href="https://mikepruett3.github.io/tags/security/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="security">
+        </a><a href="https://www.nixdevil.com/tags/security/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="security">
           security <span class="badge rounded-pill">7</span>
-        </a><a href="https://mikepruett3.github.io/tags/tape/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="tape">
+        </a><a href="https://www.nixdevil.com/tags/tape/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="tape">
           tape <span class="badge rounded-pill">7</span>
-        </a><a href="https://mikepruett3.github.io/tags/life/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="life">
+        </a><a href="https://www.nixdevil.com/tags/life/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="life">
           life <span class="badge rounded-pill">6</span>
-        </a><a href="https://mikepruett3.github.io/tags/videos/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="videos">
+        </a><a href="https://www.nixdevil.com/tags/videos/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="videos">
           videos <span class="badge rounded-pill">6</span>
-        </a><a href="https://mikepruett3.github.io/tags/movies/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="movies">
+        </a><a href="https://www.nixdevil.com/tags/movies/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="movies">
           movies <span class="badge rounded-pill">5</span>
-        </a><a href="https://mikepruett3.github.io/tags/symantec/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="symantec">
+        </a><a href="https://www.nixdevil.com/tags/symantec/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="symantec">
           symantec <span class="badge rounded-pill">5</span>
-        </a><a href="https://mikepruett3.github.io/tags/veritas/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="veritas">
+        </a><a href="https://www.nixdevil.com/tags/veritas/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="veritas">
           veritas <span class="badge rounded-pill">5</span>
-        </a><a href="https://mikepruett3.github.io/tags/asterisk/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="asterisk">
+        </a><a href="https://www.nixdevil.com/tags/asterisk/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="asterisk">
           asterisk <span class="badge rounded-pill">4</span>
-        </a><a href="https://mikepruett3.github.io/tags/hacking/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="hacking">
+        </a><a href="https://www.nixdevil.com/tags/hacking/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="hacking">
           hacking <span class="badge rounded-pill">4</span>
         </a></div>
     </section></div>

@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://mikepruett3.github.io/sitemap.xml
+Sitemap: https://www.nixdevil.com/sitemap.xml

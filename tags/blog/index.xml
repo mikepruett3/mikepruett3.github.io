@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on A haven for Unix &amp; Linux deviants</title>
-    <link>https://mikepruett3.github.io/tags/blog/</link>
+    <link>https://www.nixdevil.com/tags/blog/</link>
     <description>Recent content in blog on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Apr 2016 13:05:01 +0000</lastBuildDate><atom:link href="https://mikepruett3.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Apr 2016 13:05:01 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>New Domain, New Rules</title>
-      <link>https://mikepruett3.github.io/posts/new-domain-new-rules/</link>
+      <link>https://www.nixdevil.com/posts/new-domain-new-rules/</link>
       <pubDate>Sun, 17 Apr 2016 13:05:01 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/new-domain-new-rules/</guid>
+      <guid>https://www.nixdevil.com/posts/new-domain-new-rules/</guid>
       <description>So here we are&amp;hellip; After trying to keep this thing alive for way to long, I have decided to give it another shot.
 So much of this site is my own personal musings and ramblings, that I&amp;rsquo;m not sure if I even remember where I was headed in the first place. I do have some interesting old posts, specifically about storage, tapes, and the cloud. Might be worth a read for someone.</description>
     </item>
     
     <item>
       <title>Old Fortune City Site</title>
-      <link>https://mikepruett3.github.io/posts/old-fortune-city-site/</link>
+      <link>https://www.nixdevil.com/posts/old-fortune-city-site/</link>
       <pubDate>Mon, 02 Aug 2010 17:58:26 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/old-fortune-city-site/</guid>
+      <guid>https://www.nixdevil.com/posts/old-fortune-city-site/</guid>
       <description>While reviewing some of my old Hard-drives, I discovered that I had and copy of a site that I had build on Fortune City hosting. (Circa 1998) This would not have been my original site that I setup, but it is still old and crappy. My little home on the internet at that time was
 http://www.fortunecity.com/tatooine/swampthing/104/(Site predates the Internet Wayback Machine, so obviously dead link!)
 This looks like an EARLY attempt to create a blog, before I even knew what a blog was.</description>
@@ -30,10 +30,10 @@ This looks like an EARLY attempt to create a blog, before I even knew what a blo
     
     <item>
       <title>Shutting down Blogspot</title>
-      <link>https://mikepruett3.github.io/posts/shutting-down-blogspot/</link>
+      <link>https://www.nixdevil.com/posts/shutting-down-blogspot/</link>
       <pubDate>Sat, 19 Sep 2009 01:59:10 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/shutting-down-blogspot/</guid>
+      <guid>https://www.nixdevil.com/posts/shutting-down-blogspot/</guid>
       <description>So, after a full year on this new blog I have decided to get rid of the old blog&amp;hellip;
 I started amanoj.blogspot.comin July of 2003. Back then, I was still &amp;ldquo;Wet-Behind-the-Ears&amp;rdquo; about the whole blogging thing&amp;hellip; but I decided to give it a shot. Who knew that 6 years later, I would still be updating a site from time to time.
 Blogger.com is a fantastic service for people who are just starting out (how I was) blogging.</description>

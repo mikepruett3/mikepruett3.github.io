@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>netapp on A haven for Unix &amp; Linux deviants</title>
-    <link>https://mikepruett3.github.io/tags/netapp/</link>
+    <link>https://www.nixdevil.com/tags/netapp/</link>
     <description>Recent content in netapp on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Aug 2009 17:03:52 +0000</lastBuildDate><atom:link href="https://mikepruett3.github.io/tags/netapp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Aug 2009 17:03:52 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/netapp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>NetApp vs Equallogics - Part II</title>
-      <link>https://mikepruett3.github.io/posts/netapp-vs-equallogics-pt2/</link>
+      <link>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/</link>
       <pubDate>Tue, 25 Aug 2009 17:03:52 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/netapp-vs-equallogics-pt2/</guid>
+      <guid>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/</guid>
       <description>Alright, back to this one&amp;hellip;
 So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!</description>
     </item>
     
     <item>
       <title>NetApp vs Equallogics - Part I</title>
-      <link>https://mikepruett3.github.io/posts/netapp-vs-equallogics-pt1/</link>
+      <link>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/</link>
       <pubDate>Mon, 17 Aug 2009 00:24:09 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/netapp-vs-equallogics-pt1/</guid>
+      <guid>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/</guid>
       <description>A Twitter follower (@paulstringy) prompted me to write this post. Based on a conversation about the differences between NetApp &amp;amp; Equallogic appliances. Truth be told, there is quite a lot to separate the two. I don&amp;rsquo;t even consider them to be in the same class.
 Equallogic has been around for about 6 or 7 years now, and has penetrated the SMB market with their PS series arrays. There offerings were tantalizing because of the feature set that is offered.</description>
     </item>

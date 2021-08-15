@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archives on A haven for Unix &amp; Linux deviants</title>
-    <link>https://mikepruett3.github.io/archives/</link>
+    <link>https://www.nixdevil.com/archives/</link>
     <description>Recent content in Archives on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://mikepruett3.github.io/archives/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://www.nixdevil.com/archives/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

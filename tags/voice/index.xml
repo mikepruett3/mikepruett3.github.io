@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>voice on A haven for Unix &amp; Linux deviants</title>
-    <link>https://mikepruett3.github.io/tags/voice/</link>
+    <link>https://www.nixdevil.com/tags/voice/</link>
     <description>Recent content in voice on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2009 19:17:50 +0000</lastBuildDate><atom:link href="https://mikepruett3.github.io/tags/voice/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Nov 2009 19:17:50 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/voice/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Voice</title>
-      <link>https://mikepruett3.github.io/posts/google-voice/</link>
+      <link>https://www.nixdevil.com/posts/google-voice/</link>
       <pubDate>Mon, 09 Nov 2009 19:17:50 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/google-voice/</guid>
+      <guid>https://www.nixdevil.com/posts/google-voice/</guid>
       <description>Yes! I finally got my invite to Google Voice (thank you EvilSkill9)!!
 So far, so good. Everything looks pretty easy to setup. Looks like Google built in support for SMS messaging, and Voicemail. Aparently you can replace your standard Mobile Phone Voicemail for GV. Too Cool!
 I am not sure if I am going to put the Voice App on the blog yet.</description>
@@ -20,10 +20,10 @@ I am not sure if I am going to put the Voice App on the blog yet.</description>
     
     <item>
       <title>plumTrack - A intresting new project from the Systrax team...</title>
-      <link>https://mikepruett3.github.io/posts/plumtrack-a-intresting-new-project-from-the-systrax-team/</link>
+      <link>https://www.nixdevil.com/posts/plumtrack-a-intresting-new-project-from-the-systrax-team/</link>
       <pubDate>Wed, 28 Jan 2009 19:51:20 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/plumtrack-a-intresting-new-project-from-the-systrax-team/</guid>
+      <guid>https://www.nixdevil.com/posts/plumtrack-a-intresting-new-project-from-the-systrax-team/</guid>
       <description>Jo-Gof Systrax Blogposted an article today on one of their many upcomming projects that they have been working on. plumTrack seems to provide some intresting reporting options for the Open Source PBX software Asterisk. The product also provides integration to Plixer&amp;rsquo;s own Scrutinizergadgets, and Maximizer EnterpriseCRM products.
 Excerpt from the post&amp;hellip;
 We have developed a Call Tracking system to monitor and report statistics of our Salesand Technical Support phone activity on our[Asterisk PBX](http://www.</description>

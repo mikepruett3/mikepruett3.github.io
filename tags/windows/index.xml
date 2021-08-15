@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>windows on A haven for Unix &amp; Linux deviants</title>
-    <link>https://mikepruett3.github.io/tags/windows/</link>
+    <link>https://www.nixdevil.com/tags/windows/</link>
     <description>Recent content in windows on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2009 22:16:32 +0000</lastBuildDate><atom:link href="https://mikepruett3.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Sep 2009 22:16:32 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vista x64 Uninstall VMware vCenter Converter Standalone</title>
-      <link>https://mikepruett3.github.io/posts/vista-x64-uninstall-vmware-vcenter-converter-standalone/</link>
+      <link>https://www.nixdevil.com/posts/vista-x64-uninstall-vmware-vcenter-converter-standalone/</link>
       <pubDate>Mon, 07 Sep 2009 22:16:32 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/vista-x64-uninstall-vmware-vcenter-converter-standalone/</guid>
+      <guid>https://www.nixdevil.com/posts/vista-x64-uninstall-vmware-vcenter-converter-standalone/</guid>
       <description>If you are using Vista x64 and are trying to uninstall VMware vCenter Converter Standalone like I was, you may run into the following issue uninstalling&amp;hellip;
 Error 1321. The Installer has insufficient privileges to modify the fileC:\ProgramData\VMware\VMWare vCenter Converter Standalone\ssl\rui.keyThis aparently is due to a permissions issue on the following file:
 C:\ProgramData\VMware\VMWare vCenter Converter Standalone\ssl\rui.keyThe minute you give yourself permissions to that file, you then can successfully uninstall it.</description>
@@ -20,10 +20,10 @@ C:\ProgramData\VMware\VMWare vCenter Converter Standalone\ssl\rui.keyThe minute
     
     <item>
       <title>Windows 7 Features Demo</title>
-      <link>https://mikepruett3.github.io/posts/windows-7-features-demo/</link>
+      <link>https://www.nixdevil.com/posts/windows-7-features-demo/</link>
       <pubDate>Tue, 13 May 2008 01:45:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/windows-7-features-demo/</guid>
+      <guid>https://www.nixdevil.com/posts/windows-7-features-demo/</guid>
       <description>Did I miss something? Vista just came out last-year, and now M$ is working on the new OS!!
   A Word to Microsoft Development Managers, PLEASE FIX VISTA BEFORE MOVING ON!!! :P
 Digg Link</description>

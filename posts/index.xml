@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on A haven for Unix &amp; Linux deviants</title>
-    <link>https://mikepruett3.github.io/posts/</link>
+    <link>https://www.nixdevil.com/posts/</link>
     <description>Recent content in Posts on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Mar 2018 13:23:01 +0000</lastBuildDate><atom:link href="https://mikepruett3.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Mar 2018 13:23:01 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using dnsmasq for your Homelab</title>
-      <link>https://mikepruett3.github.io/posts/dnsmasq-for-homelab/</link>
+      <link>https://www.nixdevil.com/posts/dnsmasq-for-homelab/</link>
       <pubDate>Thu, 15 Mar 2018 13:23:01 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/dnsmasq-for-homelab/</guid>
+      <guid>https://www.nixdevil.com/posts/dnsmasq-for-homelab/</guid>
       <description>Like many of you, I run a homelab for a number of reasons. Not the least of which is for the following:
  Testing Configurations of Virtual Hypervisors Testing Software and Application Configurations A File Server for the Home Media Tools and Storage  Mostly, my lab is for the latter&amp;hellip; as I host a 22TB Local Media server in my Homelab. The Media is being hosted using Plex, my all-time favorite media server software.</description>
     </item>
     
     <item>
       <title>New Domain, New Rules</title>
-      <link>https://mikepruett3.github.io/posts/new-domain-new-rules/</link>
+      <link>https://www.nixdevil.com/posts/new-domain-new-rules/</link>
       <pubDate>Sun, 17 Apr 2016 13:05:01 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/new-domain-new-rules/</guid>
+      <guid>https://www.nixdevil.com/posts/new-domain-new-rules/</guid>
       <description>So here we are&amp;hellip; After trying to keep this thing alive for way to long, I have decided to give it another shot.
 So much of this site is my own personal musings and ramblings, that I&amp;rsquo;m not sure if I even remember where I was headed in the first place. I do have some interesting old posts, specifically about storage, tapes, and the cloud. Might be worth a read for someone.</description>
     </item>
     
     <item>
       <title>Old Fortune City Site</title>
-      <link>https://mikepruett3.github.io/posts/old-fortune-city-site/</link>
+      <link>https://www.nixdevil.com/posts/old-fortune-city-site/</link>
       <pubDate>Mon, 02 Aug 2010 17:58:26 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/old-fortune-city-site/</guid>
+      <guid>https://www.nixdevil.com/posts/old-fortune-city-site/</guid>
       <description>While reviewing some of my old Hard-drives, I discovered that I had and copy of a site that I had build on Fortune City hosting. (Circa 1998) This would not have been my original site that I setup, but it is still old and crappy. My little home on the internet at that time was
 http://www.fortunecity.com/tatooine/swampthing/104/(Site predates the Internet Wayback Machine, so obviously dead link!)
 This looks like an EARLY attempt to create a blog, before I even knew what a blog was.</description>
@@ -40,20 +40,20 @@ This looks like an EARLY attempt to create a blog, before I even knew what a blo
     
     <item>
       <title>Evolution of Storage</title>
-      <link>https://mikepruett3.github.io/posts/evolution-of-storage/</link>
+      <link>https://www.nixdevil.com/posts/evolution-of-storage/</link>
       <pubDate>Thu, 03 Dec 2009 01:50:05 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/evolution-of-storage/</guid>
+      <guid>https://www.nixdevil.com/posts/evolution-of-storage/</guid>
       <description>I just thought this is a great example of how far our perception of storage has evolved over the years.
 Yes, I am old enough to remember most of these items. :)</description>
     </item>
     
     <item>
       <title>Google Voice</title>
-      <link>https://mikepruett3.github.io/posts/google-voice/</link>
+      <link>https://www.nixdevil.com/posts/google-voice/</link>
       <pubDate>Mon, 09 Nov 2009 19:17:50 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/google-voice/</guid>
+      <guid>https://www.nixdevil.com/posts/google-voice/</guid>
       <description>Yes! I finally got my invite to Google Voice (thank you EvilSkill9)!!
 So far, so good. Everything looks pretty easy to setup. Looks like Google built in support for SMS messaging, and Voicemail. Aparently you can replace your standard Mobile Phone Voicemail for GV. Too Cool!
 I am not sure if I am going to put the Voice App on the blog yet.</description>
@@ -61,10 +61,10 @@ I am not sure if I am going to put the Voice App on the blog yet.</description>
     
     <item>
       <title>Shutting down Blogspot</title>
-      <link>https://mikepruett3.github.io/posts/shutting-down-blogspot/</link>
+      <link>https://www.nixdevil.com/posts/shutting-down-blogspot/</link>
       <pubDate>Sat, 19 Sep 2009 01:59:10 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/shutting-down-blogspot/</guid>
+      <guid>https://www.nixdevil.com/posts/shutting-down-blogspot/</guid>
       <description>So, after a full year on this new blog I have decided to get rid of the old blog&amp;hellip;
 I started amanoj.blogspot.comin July of 2003. Back then, I was still &amp;ldquo;Wet-Behind-the-Ears&amp;rdquo; about the whole blogging thing&amp;hellip; but I decided to give it a shot. Who knew that 6 years later, I would still be updating a site from time to time.
 Blogger.com is a fantastic service for people who are just starting out (how I was) blogging.</description>
@@ -72,10 +72,10 @@ Blogger.com is a fantastic service for people who are just starting out (how I w
     
     <item>
       <title>Fringe Season 2 on Thursday</title>
-      <link>https://mikepruett3.github.io/posts/fringe-season-2-on-thursday/</link>
+      <link>https://www.nixdevil.com/posts/fringe-season-2-on-thursday/</link>
       <pubDate>Wed, 16 Sep 2009 18:41:18 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/fringe-season-2-on-thursday/</guid>
+      <guid>https://www.nixdevil.com/posts/fringe-season-2-on-thursday/</guid>
       <description>I cannot wait for Season 2 of Fringe to start!
 &amp;ndash; Already Started! &amp;ndash;
 I thoroughly enjoyed the first season, and am looking forward to a fantastic new season this year. Plus, any show were Leonard Nemoy is acting has to be GOOD!</description>
@@ -83,10 +83,10 @@ I thoroughly enjoyed the first season, and am looking forward to a fantastic new
     
     <item>
       <title>The Max Headroom Pirating Incident</title>
-      <link>https://mikepruett3.github.io/posts/the-max-headroom-pirating-incident/</link>
+      <link>https://www.nixdevil.com/posts/the-max-headroom-pirating-incident/</link>
       <pubDate>Fri, 11 Sep 2009 19:18:27 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/the-max-headroom-pirating-incident/</guid>
+      <guid>https://www.nixdevil.com/posts/the-max-headroom-pirating-incident/</guid>
       <description>Really interesting Documentary on the incident. Kind of makes you think about that struggle between Broadcasting Companies, and the Jackers who wanted to take over their airwaves.
 I would assume that this trick is still possible in 3rd-World countries where the Media does not have the $$$ like US Broadcasters.
 Plus&amp;hellip; Max Headroom was an awesome show! I miss a lot of the older/weirder shows from my youth.</description>
@@ -94,10 +94,10 @@ Plus&amp;hellip; Max Headroom was an awesome show! I miss a lot of the older/wei
     
     <item>
       <title>Vista x64 Uninstall VMware vCenter Converter Standalone</title>
-      <link>https://mikepruett3.github.io/posts/vista-x64-uninstall-vmware-vcenter-converter-standalone/</link>
+      <link>https://www.nixdevil.com/posts/vista-x64-uninstall-vmware-vcenter-converter-standalone/</link>
       <pubDate>Mon, 07 Sep 2009 22:16:32 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/vista-x64-uninstall-vmware-vcenter-converter-standalone/</guid>
+      <guid>https://www.nixdevil.com/posts/vista-x64-uninstall-vmware-vcenter-converter-standalone/</guid>
       <description>If you are using Vista x64 and are trying to uninstall VMware vCenter Converter Standalone like I was, you may run into the following issue uninstalling&amp;hellip;
 Error 1321. The Installer has insufficient privileges to modify the fileC:\ProgramData\VMware\VMWare vCenter Converter Standalone\ssl\rui.keyThis aparently is due to a permissions issue on the following file:
 C:\ProgramData\VMware\VMWare vCenter Converter Standalone\ssl\rui.keyThe minute you give yourself permissions to that file, you then can successfully uninstall it.</description>
@@ -105,38 +105,38 @@ C:\ProgramData\VMware\VMWare vCenter Converter Standalone\ssl\rui.keyThe minute
     
     <item>
       <title>WoW Emergent Media Phenomenon @ Laguna Art Museum</title>
-      <link>https://mikepruett3.github.io/posts/wow-emergent-media-phenomenon-at-laguna-art-museum/</link>
+      <link>https://www.nixdevil.com/posts/wow-emergent-media-phenomenon-at-laguna-art-museum/</link>
       <pubDate>Fri, 28 Aug 2009 02:35:25 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/wow-emergent-media-phenomenon-at-laguna-art-museum/</guid>
+      <guid>https://www.nixdevil.com/posts/wow-emergent-media-phenomenon-at-laguna-art-museum/</guid>
       <description>There is an interesting even being held at the Laguna Arts Museum in Laguna Beach. From June 14th to Oct 4th 2009, the museum is hosting a Art Exhibit on the Emergent Media Phenomenon of World of Warcraft. Normally I would say that this type of even it usually only appreciated by the fans of World of Warcraft (like me), but I think that anyone with a eye for decent art would appreciate it.</description>
     </item>
     
     <item>
       <title>The Binchotan Stove</title>
-      <link>https://mikepruett3.github.io/posts/binchotan-stove/</link>
+      <link>https://www.nixdevil.com/posts/binchotan-stove/</link>
       <pubDate>Tue, 25 Aug 2009 19:00:34 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/binchotan-stove/</guid>
+      <guid>https://www.nixdevil.com/posts/binchotan-stove/</guid>
       <description>Really cool stuff. I will have to try and make one of these. Binchotan is really expensive in this part of the country though!!</description>
     </item>
     
     <item>
       <title>NetApp vs Equallogics - Part II</title>
-      <link>https://mikepruett3.github.io/posts/netapp-vs-equallogics-pt2/</link>
+      <link>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/</link>
       <pubDate>Tue, 25 Aug 2009 17:03:52 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/netapp-vs-equallogics-pt2/</guid>
+      <guid>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/</guid>
       <description>Alright, back to this one&amp;hellip;
 So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!</description>
     </item>
     
     <item>
       <title>CFW 5.00 M33 to 5.50 GEN-B</title>
-      <link>https://mikepruett3.github.io/posts/cfw-5-00-m33-to-5-50-gen-b/</link>
+      <link>https://www.nixdevil.com/posts/cfw-5-00-m33-to-5-50-gen-b/</link>
       <pubDate>Thu, 20 Aug 2009 14:15:29 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/cfw-5-00-m33-to-5-50-gen-b/</guid>
+      <guid>https://www.nixdevil.com/posts/cfw-5-00-m33-to-5-50-gen-b/</guid>
       <description>Not sure if this works, but I am destined to try!
 Seems like newer games are requiring the 5.50 firmware, but I am still running CFW 5.00 M33! Where the hell is Dark-Alex gone to?
 Oh well&amp;hellip; for your viewing pleasure!
@@ -145,19 +145,19 @@ Oh well&amp;hellip; for your viewing pleasure!
     
     <item>
       <title>District 8 (Alive in Joburg)</title>
-      <link>https://mikepruett3.github.io/posts/district-8/</link>
+      <link>https://www.nixdevil.com/posts/district-8/</link>
       <pubDate>Thu, 20 Aug 2009 00:34:14 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/district-8/</guid>
+      <guid>https://www.nixdevil.com/posts/district-8/</guid>
       <description>So this past weekend I had a chance to see the new movie from director Neil Blomkamp, District 9. If you haven&amp;rsquo;t seen District 9 yet, you owe it to yourself to see this movie. The story is great, and the special effects are subtle yet impressive. The director has created a world were the main event is not the Aliens them selfs, but rather their environment &amp;amp; quest to go home.</description>
     </item>
     
     <item>
       <title>I must have died an gone to heaven!</title>
-      <link>https://mikepruett3.github.io/posts/i-must-have-died-an-gone-to-heaven/</link>
+      <link>https://www.nixdevil.com/posts/i-must-have-died-an-gone-to-heaven/</link>
       <pubDate>Wed, 19 Aug 2009 23:51:34 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/i-must-have-died-an-gone-to-heaven/</guid>
+      <guid>https://www.nixdevil.com/posts/i-must-have-died-an-gone-to-heaven/</guid>
       <description>I cant believe that this is actually a reality, but one of my favorite horror movies has been transformed into a Musical!
 Evil Dead the MusicalIf your like me then you should have been a fan of Sam Rami&amp;rsquo;s first movie. Scary &amp;amp; Hilarious at the same time!
   </description>
@@ -165,40 +165,40 @@ Evil Dead the MusicalIf your like me then you should have been a fan of Sam Ram
     
     <item>
       <title>NetApp vs Equallogics - Part I</title>
-      <link>https://mikepruett3.github.io/posts/netapp-vs-equallogics-pt1/</link>
+      <link>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/</link>
       <pubDate>Mon, 17 Aug 2009 00:24:09 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/netapp-vs-equallogics-pt1/</guid>
+      <guid>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/</guid>
       <description>A Twitter follower (@paulstringy) prompted me to write this post. Based on a conversation about the differences between NetApp &amp;amp; Equallogic appliances. Truth be told, there is quite a lot to separate the two. I don&amp;rsquo;t even consider them to be in the same class.
 Equallogic has been around for about 6 or 7 years now, and has penetrated the SMB market with their PS series arrays. There offerings were tantalizing because of the feature set that is offered.</description>
     </item>
     
     <item>
       <title>Trading in Tapes for Clouds...</title>
-      <link>https://mikepruett3.github.io/posts/trading-in-tapes-for-clouds/</link>
+      <link>https://www.nixdevil.com/posts/trading-in-tapes-for-clouds/</link>
       <pubDate>Tue, 04 Aug 2009 17:24:49 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/trading-in-tapes-for-clouds/</guid>
+      <guid>https://www.nixdevil.com/posts/trading-in-tapes-for-clouds/</guid>
       <description>You would not believe how many vendors &amp;amp; ISV&amp;rsquo;s I talk to throught the workweek. On any given day, I usually have to tell some poor sap &amp;ldquo;NO&amp;rdquo;, or &amp;ldquo;I am unintrested in your products, please stop calling&amp;rdquo;! It does take an enormous ammount of paitentce not to just hang up the phone, but I digress.
 The other day I got a rather interesting call, this Vendor wanted to inform me of the Tremendous Cost Savings that my employer can obtain by using their new product.</description>
     </item>
     
     <item>
       <title>Summer Games...</title>
-      <link>https://mikepruett3.github.io/posts/summer-games/</link>
+      <link>https://www.nixdevil.com/posts/summer-games/</link>
       <pubDate>Mon, 03 Aug 2009 20:44:21 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/summer-games/</guid>
+      <guid>https://www.nixdevil.com/posts/summer-games/</guid>
       <description>I have been a huge fan of Alternative Reality Games (ARG) for some time now. Ever since my first romp through EA&amp;rsquo;s Majestic (Which I still think is Ground-Breaking), and Lurking (read: following) on the I Love Bees games&amp;hellip; I haven&amp;rsquo;t been able to stop!
 I have participated &amp;amp; lurked quite a lot over the years&amp;hellip; some stories turn out to be very exciting, others have ended off shortly. I think there is a fine art to crafting a good ARG.</description>
     </item>
     
     <item>
       <title>Whats up all!!</title>
-      <link>https://mikepruett3.github.io/posts/whats-up-all/</link>
+      <link>https://www.nixdevil.com/posts/whats-up-all/</link>
       <pubDate>Sat, 01 Aug 2009 03:23:59 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/whats-up-all/</guid>
+      <guid>https://www.nixdevil.com/posts/whats-up-all/</guid>
       <description>I am still here. Thankfully my hosting company got their act&amp;rsquo;s together, and now we have plenty of bandwith to support this blog. Recently post have been just my Delicious bookmarks, which are posted to the blog on a nightly basis. (I will do a follow-up post on how to do that.)
 Just an update of what I am working on&amp;hellip;
  Upgrading our BlueCoat SG Proxy from an SG400 to a SG510.</description>
@@ -206,10 +206,10 @@ Just an update of what I am working on&amp;hellip;
     
     <item>
       <title>Still Here People...</title>
-      <link>https://mikepruett3.github.io/posts/still-here-people/</link>
+      <link>https://www.nixdevil.com/posts/still-here-people/</link>
       <pubDate>Tue, 19 May 2009 01:08:17 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/still-here-people/</guid>
+      <guid>https://www.nixdevil.com/posts/still-here-people/</guid>
       <description>Yep, I am still here on this site. I was having a few problems with my webhost earlier this month, but those should all be resolved by now. (I hope!)
 Whats new in my life you ask&amp;hellip; well lets see:
   Completed a Data Center re-cabling job in less than 72 hours! That was no easy feat, involving most of my staff to give up a weekend to get it done.</description>
@@ -217,20 +217,20 @@ Whats new in my life you ask&amp;hellip; well lets see:
     
     <item>
       <title>God of War 3 is Coming!!!</title>
-      <link>https://mikepruett3.github.io/posts/god-of-war-iii-is-coming/</link>
+      <link>https://www.nixdevil.com/posts/god-of-war-iii-is-coming/</link>
       <pubDate>Thu, 19 Feb 2009 03:25:16 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/god-of-war-iii-is-coming/</guid>
+      <guid>https://www.nixdevil.com/posts/god-of-war-iii-is-coming/</guid>
       <description>I cant wait! I loved God of War I &amp;amp; II on the PS2, and was really impressed with God of War: Chains of Olympus on PSP.
 I had passed on buying a PS3 at launch in 2006, only to buy a much cheaper Xbox 360. I still like my 360, and their are more games out for the platform&amp;hellip; but I knew that one day I would have to get the PS3 as well.</description>
     </item>
     
     <item>
       <title>plumTrack - A intresting new project from the Systrax team...</title>
-      <link>https://mikepruett3.github.io/posts/plumtrack-a-intresting-new-project-from-the-systrax-team/</link>
+      <link>https://www.nixdevil.com/posts/plumtrack-a-intresting-new-project-from-the-systrax-team/</link>
       <pubDate>Wed, 28 Jan 2009 19:51:20 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/plumtrack-a-intresting-new-project-from-the-systrax-team/</guid>
+      <guid>https://www.nixdevil.com/posts/plumtrack-a-intresting-new-project-from-the-systrax-team/</guid>
       <description>Jo-Gof Systrax Blogposted an article today on one of their many upcomming projects that they have been working on. plumTrack seems to provide some intresting reporting options for the Open Source PBX software Asterisk. The product also provides integration to Plixer&amp;rsquo;s own Scrutinizergadgets, and Maximizer EnterpriseCRM products.
 Excerpt from the post&amp;hellip;
 We have developed a Call Tracking system to monitor and report statistics of our Salesand Technical Support phone activity on our[Asterisk PBX](http://www.</description>
@@ -238,10 +238,10 @@ We have developed a Call Tracking system to monitor and report statistics of our
     
     <item>
       <title>Lets try that again...</title>
-      <link>https://mikepruett3.github.io/posts/lets-try-that-again/</link>
+      <link>https://www.nixdevil.com/posts/lets-try-that-again/</link>
       <pubDate>Thu, 22 Jan 2009 07:02:27 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/lets-try-that-again/</guid>
+      <guid>https://www.nixdevil.com/posts/lets-try-that-again/</guid>
       <description>I am happy to announce the re-opening of this blog! ~w00t! :)
 A special Thank You to my new provider Hosting Puppyfor the site &amp;amp; the fantastic support.
 After 3 unsuccessful hosting providers and 2 site-wide data corruption issues, one would think that I would learn from my mistakes.
@@ -251,10 +251,10 @@ The only good news is that I am now extremely perficent at re-building my Wordpr
     
     <item>
       <title>Windows 7 Features Demo</title>
-      <link>https://mikepruett3.github.io/posts/windows-7-features-demo/</link>
+      <link>https://www.nixdevil.com/posts/windows-7-features-demo/</link>
       <pubDate>Tue, 13 May 2008 01:45:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/windows-7-features-demo/</guid>
+      <guid>https://www.nixdevil.com/posts/windows-7-features-demo/</guid>
       <description>Did I miss something? Vista just came out last-year, and now M$ is working on the new OS!!
   A Word to Microsoft Development Managers, PLEASE FIX VISTA BEFORE MOVING ON!!! :P
 Digg Link</description>
@@ -262,20 +262,20 @@ Digg Link</description>
     
     <item>
       <title>Digium AsteriskWorld 2008</title>
-      <link>https://mikepruett3.github.io/posts/asteriskworld2008/</link>
+      <link>https://www.nixdevil.com/posts/asteriskworld2008/</link>
       <pubDate>Wed, 19 Mar 2008 16:32:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/asteriskworld2008/</guid>
+      <guid>https://www.nixdevil.com/posts/asteriskworld2008/</guid>
       <description>Digium AsteriskWorld (Part of the VON.x Conference)
 This has been a fun event so far. We have been fed on a regular basis, and Pulvermedia has sprung for the Top-Shelf Liquor. I did get to spend a lot of time with Marc Spencer w/ Digium. Great guy, and soooo damn young! I have a few more hours here before catching a plane, so lets see what-else this conference has in store.</description>
     </item>
     
     <item>
       <title>Road to AsteriskWorld</title>
-      <link>https://mikepruett3.github.io/posts/road-2-asteriskworld/</link>
+      <link>https://www.nixdevil.com/posts/road-2-asteriskworld/</link>
       <pubDate>Fri, 14 Mar 2008 09:16:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/road-2-asteriskworld/</guid>
+      <guid>https://www.nixdevil.com/posts/road-2-asteriskworld/</guid>
       <description>One other thing. I am going to be in the San Jose area next-week for the AsteriskWorld convention.
 Its going to be a fun time, and I am hoping to meet some like-minded individuals! (Networking Rocks!)
 BTW&amp;hellip; I am posting more of my ramblings on my Twitterpage! Please feel free to join my ring, and I will join yours! (We can all play nice right?)</description>
@@ -283,10 +283,10 @@ BTW&amp;hellip; I am posting more of my ramblings on my Twitterpage! Please fee
     
     <item>
       <title>March 2008 Update</title>
-      <link>https://mikepruett3.github.io/posts/march-08-update/</link>
+      <link>https://www.nixdevil.com/posts/march-08-update/</link>
       <pubDate>Fri, 14 Mar 2008 09:12:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/march-08-update/</guid>
+      <guid>https://www.nixdevil.com/posts/march-08-update/</guid>
       <description>Havent updated this in a while&amp;hellip; but I promise to add more content!
 Just as an FYI of what I have been working on in the past 6 - 9 months:
  Implementing a 300+ user Asterisk Implementation Re-vising the companies SOX controls. Creating new IT Procedures, revising old ones. Finishing up a massive NetBackup deployment. Completing an Internal Process Walkthrough. (One every year!) Planning our VMWare V3i implementation. Trying to stay afloat!</description>
@@ -294,10 +294,10 @@ Just as an FYI of what I have been working on in the past 6 - 9 months:
     
     <item>
       <title>My love of separation... (Why Heroes has won me over.)</title>
-      <link>https://mikepruett3.github.io/posts/my-love-of-separation/</link>
+      <link>https://www.nixdevil.com/posts/my-love-of-separation/</link>
       <pubDate>Tue, 22 May 2007 08:22:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/my-love-of-separation/</guid>
+      <guid>https://www.nixdevil.com/posts/my-love-of-separation/</guid>
       <description>_ Mindless 2AM rant approaching _
  A Letter to whom it concerns. Why does the world hate me so&amp;hellip;.. Or at least, why has NBC torn my mind asunder again?
 Of course I am speaking metaphorically, but I sometimes ask myself this question. (Amongst many others.)
@@ -306,10 +306,10 @@ Tonight was the Season Finale of two of my favorite TV shows. For most of you wh
     
     <item>
       <title>Launched a new blog...</title>
-      <link>https://mikepruett3.github.io/posts/launched-a-new-blog/</link>
+      <link>https://www.nixdevil.com/posts/launched-a-new-blog/</link>
       <pubDate>Sat, 08 Jul 2006 04:38:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/launched-a-new-blog/</guid>
+      <guid>https://www.nixdevil.com/posts/launched-a-new-blog/</guid>
       <description>With my good friend, we have decided to lauch a new team blog that focuses on technology knowledge sharing. Both of us are IT Professionals, and have many years experience. Instead of being greedy and not sharing, we decided to listen to Tux &amp;amp; share the wealth of knowledge to the public.
 So check it out&amp;hellip; its called &amp;ldquo;Communication Meltdown&amp;rdquo;and its LIVE!!
 I will still be posting on this blog, but most of the technical stuff will be posted on the new blog.</description>
@@ -317,10 +317,10 @@ I will still be posting on this blog, but most of the technical stuff will be po
     
     <item>
       <title>Veritas RedHat Linux Remote Agent – FINAL UPDATE!</title>
-      <link>https://mikepruett3.github.io/posts/veritas-lra-final/</link>
+      <link>https://www.nixdevil.com/posts/veritas-lra-final/</link>
       <pubDate>Thu, 07 Jul 2005 22:08:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/veritas-lra-final/</guid>
+      <guid>https://www.nixdevil.com/posts/veritas-lra-final/</guid>
       <description>So.. Veritas finally has the answer.
 It was a problem with the tape backup device that we were using. Tried to backup/restore from disk&amp;hellip; and it worked! Now I have to work up a proposal for a new backup server for Oracle!! Whoo Hoo!!!
 On a lighter note, I have been reviewing the documentation for &amp;ldquo;pigsentry&amp;rdquo;. Its a perl script that can be configured to send out an e-mail when certain &amp;ldquo;attacks&amp;rdquo; are logged in snort.</description>
@@ -328,10 +328,10 @@ On a lighter note, I have been reviewing the documentation for &amp;ldquo;pigsen
     
     <item>
       <title>Veritas RedHat Linux Remote Agent – Update (again!)</title>
-      <link>https://mikepruett3.github.io/posts/veritas-lra-update-2/</link>
+      <link>https://www.nixdevil.com/posts/veritas-lra-update-2/</link>
       <pubDate>Mon, 13 Jun 2005 23:48:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/veritas-lra-update-2/</guid>
+      <guid>https://www.nixdevil.com/posts/veritas-lra-update-2/</guid>
       <description>Ok&amp;hellip; Veritas is ignoring me!!!
 I am waiting paitently for some resolution on this, but to no avail!
 In the meantime, I have been working on Deploying the &amp;ldquo;Cisco VPN Client&amp;rdquo; via Group Policy.
@@ -340,10 +340,10 @@ Group Policy is awesome&amp;hellip; I have a renewed faith in Microsofts Enginer
     
     <item>
       <title>Veritas RedHat Linux Remote Agent - Update</title>
-      <link>https://mikepruett3.github.io/posts/veritas-lra-update-1/</link>
+      <link>https://www.nixdevil.com/posts/veritas-lra-update-1/</link>
       <pubDate>Fri, 10 Jun 2005 23:14:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/veritas-lra-update-1/</guid>
+      <guid>https://www.nixdevil.com/posts/veritas-lra-update-1/</guid>
       <description>Still not working as of yet. I have been on the Veritas support forums for 2 days now. I posted a question to there technical staff, and I got one responce:
  Update the client with a patch.
  I&amp;rsquo;ve update the RHEL server with the patch, and still no success.
@@ -352,10 +352,10 @@ The problem is, I can backup anything from the RHEL3 server&amp;hellip; but I ca
     
     <item>
       <title>Veritas Remote Agent for Linux</title>
-      <link>https://mikepruett3.github.io/posts/veritas-remote-agent-for-linux/</link>
+      <link>https://www.nixdevil.com/posts/veritas-remote-agent-for-linux/</link>
       <pubDate>Wed, 08 Jun 2005 22:59:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/veritas-remote-agent-for-linux/</guid>
+      <guid>https://www.nixdevil.com/posts/veritas-remote-agent-for-linux/</guid>
       <description>One of my projects this year is to find a new backup solution for our Oracle servers.
 We currently use a software piece called &amp;ldquo;Lone Tar&amp;rdquo;. Great for backing up a single server, back in 1993&amp;hellip; but with todays larger tape capacities, and the advent of tape libraries LT just doesn&amp;rsquo;t cut the mustard!!
 Currently, I am using a set of BASH shell scripts and CRONTAB to schedule this whole ordeal.</description>
@@ -363,10 +363,10 @@ Currently, I am using a set of BASH shell scripts and CRONTAB to schedule this w
     
     <item>
       <title>Auditor</title>
-      <link>https://mikepruett3.github.io/posts/auditor/</link>
+      <link>https://www.nixdevil.com/posts/auditor/</link>
       <pubDate>Tue, 07 Jun 2005 17:04:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/auditor/</guid>
+      <guid>https://www.nixdevil.com/posts/auditor/</guid>
       <description>Found a very intresting piece of software called &amp;ldquo;Auditor&amp;rdquo;. (Actually its a compilation of software, on a bootable CD) Its bascially a rip of Kanotix, (Knoppix Clone) with a LOT of applications. Most notable is a copy of Kismet &amp;amp; Airdump. With these tools, you can WarDive an almost brute-force your way into a wi-fi network. Pretty cool. =D
 I will be trying this later on!!!
 Here is a link to the &amp;ldquo;Auditor&amp;rdquo; webpage&amp;hellip;</description>
@@ -374,10 +374,10 @@ Here is a link to the &amp;ldquo;Auditor&amp;rdquo; webpage&amp;hellip;</descrip
     
     <item>
       <title>I&#39;m Back!!</title>
-      <link>https://mikepruett3.github.io/posts/i-am-back/</link>
+      <link>https://www.nixdevil.com/posts/i-am-back/</link>
       <pubDate>Tue, 07 Jun 2005 06:02:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/i-am-back/</guid>
+      <guid>https://www.nixdevil.com/posts/i-am-back/</guid>
       <description>Its been awhile&amp;hellip; and all I can say is Im Back!
 I have been extremely busy for the past year, what with the massive undertaking of my Companies Sarbanes-Oxley compliance, and managing the entire department while our new Director got up to speed. Not an easy task!
 But now I&amp;rsquo;m back&amp;hellip; and I plan to put this blog to good use!
@@ -386,20 +386,20 @@ So&amp;hellip; to start of on the right foot, I am going to be documenting one o
     
     <item>
       <title>StorageTek StreamLine SL8500</title>
-      <link>https://mikepruett3.github.io/posts/storagetek-streamline-sl8500/</link>
+      <link>https://www.nixdevil.com/posts/storagetek-streamline-sl8500/</link>
       <pubDate>Fri, 09 Jul 2004 00:36:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/storagetek-streamline-sl8500/</guid>
+      <guid>https://www.nixdevil.com/posts/storagetek-streamline-sl8500/</guid>
       <description>Many of you might not even be into IT or Computer related equipment&amp;hellip; but just the sheer size of this alone makes even the meager feel small.
 StorageTek Product: StreamLine?2 SL8500 modular library systemI want one for the house!!!</description>
     </item>
     
     <item>
       <title>Google Mail Address</title>
-      <link>https://mikepruett3.github.io/posts/google-mail-address/</link>
+      <link>https://www.nixdevil.com/posts/google-mail-address/</link>
       <pubDate>Sat, 26 Jun 2004 08:28:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/google-mail-address/</guid>
+      <guid>https://www.nixdevil.com/posts/google-mail-address/</guid>
       <description>&amp;hellip;&amp;hellip;ooo000OOO FINALLY!! OOO000ooo&amp;hellip;&amp;hellip;I now am the proud owner of a Gmail Address!!!
 Damm all the warnings, and the conspiracy theories&amp;hellip; I absolutely love Google!
 I use there blogger service&amp;hellip; and now the e-mail. 1 GB of storage&amp;hellip; what a dream!
@@ -410,10 +410,10 @@ I am at peace now&amp;hellip; and can return to whatever the hell I was doing be
     
     <item>
       <title>Special Birthday Present!!</title>
-      <link>https://mikepruett3.github.io/posts/special-birthday-present/</link>
+      <link>https://www.nixdevil.com/posts/special-birthday-present/</link>
       <pubDate>Tue, 15 Jun 2004 07:40:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/special-birthday-present/</guid>
+      <guid>https://www.nixdevil.com/posts/special-birthday-present/</guid>
       <description>I finally did it!!
 As a Birthday Present for my 29th Birthday (Today.), my wife bought me a motorcycle.
 (Can you believe it?? What a Gal!)
@@ -423,19 +423,19 @@ Well for $1400 and the cost of a 2XL helmet&amp;hellip; (I have a BIG F%^&amp;am
     
     <item>
       <title>VisitorVille</title>
-      <link>https://mikepruett3.github.io/posts/visitorville/</link>
+      <link>https://www.nixdevil.com/posts/visitorville/</link>
       <pubDate>Wed, 09 Jun 2004 19:54:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/visitorville/</guid>
+      <guid>https://www.nixdevil.com/posts/visitorville/</guid>
       <description>This thing is pretty cool.. check it out. VisitorVilleWill need to update the website to include this!</description>
     </item>
     
     <item>
       <title>The Darknet Project</title>
-      <link>https://mikepruett3.github.io/posts/the-darknet-project/</link>
+      <link>https://www.nixdevil.com/posts/the-darknet-project/</link>
       <pubDate>Tue, 08 Jun 2004 00:17:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/the-darknet-project/</guid>
+      <guid>https://www.nixdevil.com/posts/the-darknet-project/</guid>
       <description>Those Guys over at Team Cymru Research have done it again!
 They have released a new version of their Darknet Project. For those unaware of what this is&amp;hellip; check it out!
  Tracking compromised machines can be difficult. Security solutions often don&amp;rsquo;t scale to the size of larger networks. Technologies such as IDS are flawed, producing copious false positives. When solutions are scaled to fit the larger providers, they often require considerable care and feeding, thus taking time away from problem mitigation.</description>
@@ -443,10 +443,10 @@ They have released a new version of their Darknet Project. For those unaware of
     
     <item>
       <title>Speakeasy Woes...</title>
-      <link>https://mikepruett3.github.io/posts/speakeasy-woes/</link>
+      <link>https://www.nixdevil.com/posts/speakeasy-woes/</link>
       <pubDate>Thu, 03 Jun 2004 08:09:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/speakeasy-woes/</guid>
+      <guid>https://www.nixdevil.com/posts/speakeasy-woes/</guid>
       <description>Speakeasy SUX right now.
 I&amp;rsquo;m not very thrilled! :(
 I am having recurring problems where I keep loosing sync on new 6.0/768 install at my house.
@@ -456,10 +456,10 @@ If that happens, must convince my boss to let me expense a wireless T-1.</descr
     
     <item>
       <title>Networking News - Update</title>
-      <link>https://mikepruett3.github.io/posts/networking-news-update/</link>
+      <link>https://www.nixdevil.com/posts/networking-news-update/</link>
       <pubDate>Wed, 26 May 2004 20:19:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/networking-news-update/</guid>
+      <guid>https://www.nixdevil.com/posts/networking-news-update/</guid>
       <description>The Intrusion Detection System (IDS) that I am building up at work is up and running!
 FINALLY!
 Had to add a 10base hub in line between the router and the core switch&amp;hellip;
@@ -468,10 +468,10 @@ Lesson Learned</description>
     
     <item>
       <title>Knoppix Disk Image</title>
-      <link>https://mikepruett3.github.io/posts/knoppix-disk-image/</link>
+      <link>https://www.nixdevil.com/posts/knoppix-disk-image/</link>
       <pubDate>Tue, 25 May 2004 20:54:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/knoppix-disk-image/</guid>
+      <guid>https://www.nixdevil.com/posts/knoppix-disk-image/</guid>
       <description>I discovered today that my beloved Knoppix Linux Live OS Boot Disk can do something quite unique..
 It can make a disk image of a Windows 2000/XP harddrive&amp;hellip;
 DOPE! 😃
@@ -481,10 +481,10 @@ Image Your Hard Drive Using Knoppix</description>
     
     <item>
       <title>Fairly-Secure Anti-SPAM Gateway</title>
-      <link>https://mikepruett3.github.io/posts/fairly-secure-anti-spam-gateway/</link>
+      <link>https://www.nixdevil.com/posts/fairly-secure-anti-spam-gateway/</link>
       <pubDate>Fri, 21 May 2004 01:18:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/fairly-secure-anti-spam-gateway/</guid>
+      <guid>https://www.nixdevil.com/posts/fairly-secure-anti-spam-gateway/</guid>
       <description>Discovered a great new article on how to build your own &amp;ldquo;Fairly-Secure Anti-SPAM Gateway&amp;rdquo; using a lot of Open-Source Software.
 These applications are pretty standard for any Linux Sysadmin, and should come as no shock&amp;hellip;
  OpenBSD (or any *nix distro) Postfix Greylisting Amavisd-new SpamAssassin Razor DCC  The site is maintained by Scott Vintinner, and I can say that he did any excellent job. :)
@@ -493,10 +493,10 @@ Go head on over to FlakShack.</description>
     
     <item>
       <title>Spam Filtering with Gentoo</title>
-      <link>https://mikepruett3.github.io/posts/spam-filtering-with-gentoo/</link>
+      <link>https://www.nixdevil.com/posts/spam-filtering-with-gentoo/</link>
       <pubDate>Fri, 21 May 2004 00:51:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/spam-filtering-with-gentoo/</guid>
+      <guid>https://www.nixdevil.com/posts/spam-filtering-with-gentoo/</guid>
       <description>Don&amp;rsquo;t know how long I was looking for this link!
 DAMN&amp;hellip; time to Implement!
 Gentoo Forums :: HOWTO - Spam Filtering for Exchange with Gentoo, Postfix, Amavisd-new and SpamAssassin</description>
@@ -504,20 +504,20 @@ Gentoo Forums :: HOWTO - Spam Filtering for Exchange with Gentoo, Postfix, Amavi
     
     <item>
       <title>Networking News</title>
-      <link>https://mikepruett3.github.io/posts/networking-news/</link>
+      <link>https://www.nixdevil.com/posts/networking-news/</link>
       <pubDate>Thu, 20 May 2004 17:08:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/networking-news/</guid>
+      <guid>https://www.nixdevil.com/posts/networking-news/</guid>
       <description>How to setup an Fedora IDS&amp;hellip; SWEET!!!
 WINSNORT.com :: Intrusion Detection</description>
     </item>
     
     <item>
       <title>Internet Security Guru</title>
-      <link>https://mikepruett3.github.io/posts/internet-security-guru/</link>
+      <link>https://www.nixdevil.com/posts/internet-security-guru/</link>
       <pubDate>Thu, 20 May 2004 16:59:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/internet-security-guru/</guid>
+      <guid>https://www.nixdevil.com/posts/internet-security-guru/</guid>
       <description>This guy is Amazing!
 He is my Uber, and I am his Padiwan Learner.
 Internet Security Guru</description>
@@ -525,10 +525,10 @@ Internet Security Guru</description>
     
     <item>
       <title>What... Who, Me?</title>
-      <link>https://mikepruett3.github.io/posts/what-who-me/</link>
+      <link>https://www.nixdevil.com/posts/what-who-me/</link>
       <pubDate>Wed, 19 May 2004 20:49:00 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/what-who-me/</guid>
+      <guid>https://www.nixdevil.com/posts/what-who-me/</guid>
       <description>Long day&amp;hellip; and it just keeps dragging.
 Hopefully this day will END SOON! :(
 Todays thoughts&amp;hellip;
@@ -537,10 +537,10 @@ Todays thoughts&amp;hellip;
     
     <item>
       <title>Friends, Parting is such Sweet Sorrow...</title>
-      <link>https://mikepruett3.github.io/posts/friends-parting-is-such-sweet-sorrow/</link>
+      <link>https://www.nixdevil.com/posts/friends-parting-is-such-sweet-sorrow/</link>
       <pubDate>Tue, 22 Jul 2003 00:01:30 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/friends-parting-is-such-sweet-sorrow/</guid>
+      <guid>https://www.nixdevil.com/posts/friends-parting-is-such-sweet-sorrow/</guid>
       <description>Man, I am so bummed out!
 Gerald (G-Dog, or EvilSkill9), my right hand-man for like 8 years has left California.
 He is heading east, out to Ohio to start a new life with his girl.
@@ -551,10 +551,10 @@ The reality has just kicked in, but I am a little far from sobbing&amp;hellip; �
     
     <item>
       <title>General Nothingness...</title>
-      <link>https://mikepruett3.github.io/posts/general-nothingness/</link>
+      <link>https://www.nixdevil.com/posts/general-nothingness/</link>
       <pubDate>Thu, 10 Jul 2003 07:25:47 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/general-nothingness/</guid>
+      <guid>https://www.nixdevil.com/posts/general-nothingness/</guid>
       <description>Really tired right about now&amp;hellip;
 I am snagging a few albums and trying to finish The Hulk, all while still at the office! 😀
 Terminator 3 was pretty decent! I was not expecting the ending.
@@ -564,10 +564,10 @@ Oh well, must get a hole saw kit to drill a BIG HOLE in my tower.</description>
     
     <item>
       <title>Randomness</title>
-      <link>https://mikepruett3.github.io/posts/randomness/</link>
+      <link>https://www.nixdevil.com/posts/randomness/</link>
       <pubDate>Wed, 09 Jul 2003 23:12:42 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/randomness/</guid>
+      <guid>https://www.nixdevil.com/posts/randomness/</guid>
       <description>I guess that I&amp;rsquo;m being a nice guy today.
 I am giving all the peeps @ work a crack at the new Terminator 3, and other movies that I have downloaded recently.
 Even though its my effing BANDWITH! Nobody else seems to care, or contribute (i.e. download) anything! All exept for T-Dogg!
@@ -577,10 +577,10 @@ Peace&amp;hellip; Love&amp;hellip; and Chicken Wings!</description>
     
     <item>
       <title>Torrentness</title>
-      <link>https://mikepruett3.github.io/posts/torrentness/</link>
+      <link>https://www.nixdevil.com/posts/torrentness/</link>
       <pubDate>Wed, 09 Jul 2003 06:41:56 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/torrentness/</guid>
+      <guid>https://www.nixdevil.com/posts/torrentness/</guid>
       <description>Ok, going to go to sleep now people!
 The move that I am downloading, Terminator 3 is at 98% completion. This movie is taking FOREVER to download!
 😢
@@ -590,10 +590,10 @@ Now, if I could only find my damn power adapter for my drill&amp;hellip;</descri
     
     <item>
       <title>Infectious Grooves</title>
-      <link>https://mikepruett3.github.io/posts/infectious-grooves/</link>
+      <link>https://www.nixdevil.com/posts/infectious-grooves/</link>
       <pubDate>Wed, 09 Jul 2003 01:35:20 +0000</pubDate>
       
-      <guid>https://mikepruett3.github.io/posts/infectious-grooves/</guid>
+      <guid>https://www.nixdevil.com/posts/infectious-grooves/</guid>
       <description>I can&amp;rsquo;t believe that I am still so sick!
 This really sucks&amp;hellip;
 Although, the thought of walking around @ Work and Infecting innocent bystanders with whatever pestilence I have growing inside of me is amusing!
