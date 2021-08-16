@@ -6,7 +6,17 @@
     <description>Recent content in Posts on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Mar 2018 13:23:01 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Aug 2021 20:48:54 -0500</lastBuildDate><atom:link href="https://www.nixdevil.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Move to Hugo</title>
+      <link>https://www.nixdevil.com/posts/move-to-hugo/</link>
+      <pubDate>Sun, 15 Aug 2021 20:48:54 -0500</pubDate>
+      
+      <guid>https://www.nixdevil.com/posts/move-to-hugo/</guid>
+      <description>So this site has long be running on an older branch of a Jekyll theme, that was heavly modified. I have always had problems updating the site, not to mention getting Jekyll to run properly on Windows. Also, I am not a real fan of Ruby.
+Last year during our horrible dark times, I set out to learn a new programming language. I had been messing with Golang for a little while, and I finally sat down with some awesome online classes from PluralSight, and really got to task.</description>
+    </item>
+    
     <item>
       <title>Using dnsmasq for your Homelab</title>
       <link>https://www.nixdevil.com/posts/dnsmasq-for-homelab/</link>

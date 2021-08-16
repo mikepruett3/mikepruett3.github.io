@@ -6,7 +6,52 @@
     <description>Recent content in Tags on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Mar 2018 13:23:01 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Aug 2021 20:48:54 -0500</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go</title>
+      <link>https://www.nixdevil.com/tags/go/</link>
+      <pubDate>Sun, 15 Aug 2021 20:48:54 -0500</pubDate>
+      
+      <guid>https://www.nixdevil.com/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://www.nixdevil.com/tags/hugo/</link>
+      <pubDate>Sun, 15 Aug 2021 20:48:54 -0500</pubDate>
+      
+      <guid>https://www.nixdevil.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jekyll</title>
+      <link>https://www.nixdevil.com/tags/jekyll/</link>
+      <pubDate>Sun, 15 Aug 2021 20:48:54 -0500</pubDate>
+      
+      <guid>https://www.nixdevil.com/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://www.nixdevil.com/tags/programming/</link>
+      <pubDate>Sun, 15 Aug 2021 20:48:54 -0500</pubDate>
+      
+      <guid>https://www.nixdevil.com/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>website</title>
+      <link>https://www.nixdevil.com/tags/website/</link>
+      <pubDate>Sun, 15 Aug 2021 20:48:54 -0500</pubDate>
+      
+      <guid>https://www.nixdevil.com/tags/website/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>dns</title>
       <link>https://www.nixdevil.com/tags/dns/</link>
@@ -31,15 +76,6 @@
       <pubDate>Sun, 17 Apr 2016 13:05:01 +0000</pubDate>
       
       <guid>https://www.nixdevil.com/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>website</title>
-      <link>https://www.nixdevil.com/tags/website/</link>
-      <pubDate>Sun, 17 Apr 2016 13:05:01 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/tags/website/</guid>
       <description></description>
     </item>
     

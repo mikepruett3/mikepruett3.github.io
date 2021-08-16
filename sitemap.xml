@@ -3,10 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.nixdevil.com/</loc>
-    <lastmod>2018-03-15T13:23:01+00:00</lastmod>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
   </url><url>
     <loc>https://www.nixdevil.com/categories/</loc>
-    <lastmod>2018-03-15T13:23:01+00:00</lastmod>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/tags/go/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/tags/hugo/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/tags/jekyll/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/posts/move-to-hugo/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/posts/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/tags/programming/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/tags/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/categories/updates/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
+  </url><url>
+    <loc>https://www.nixdevil.com/tags/website/</loc>
+    <lastmod>2021-08-15T20:48:54-05:00</lastmod>
   </url><url>
     <loc>https://www.nixdevil.com/tags/dns/</loc>
     <lastmod>2018-03-15T13:23:01+00:00</lastmod>
@@ -14,13 +41,7 @@
     <loc>https://www.nixdevil.com/categories/homelab/</loc>
     <lastmod>2018-03-15T13:23:01+00:00</lastmod>
   </url><url>
-    <loc>https://www.nixdevil.com/posts/</loc>
-    <lastmod>2018-03-15T13:23:01+00:00</lastmod>
-  </url><url>
     <loc>https://www.nixdevil.com/tags/selfhosted/</loc>
-    <lastmod>2018-03-15T13:23:01+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nixdevil.com/tags/</loc>
     <lastmod>2018-03-15T13:23:01+00:00</lastmod>
   </url><url>
     <loc>https://www.nixdevil.com/posts/dnsmasq-for-homelab/</loc>
@@ -30,12 +51,6 @@
     <lastmod>2016-04-17T13:05:01+00:00</lastmod>
   </url><url>
     <loc>https://www.nixdevil.com/posts/new-domain-new-rules/</loc>
-    <lastmod>2016-04-17T13:05:01+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nixdevil.com/categories/updates/</loc>
-    <lastmod>2016-04-17T13:05:01+00:00</lastmod>
-  </url><url>
-    <loc>https://www.nixdevil.com/tags/website/</loc>
     <lastmod>2016-04-17T13:05:01+00:00</lastmod>
   </url><url>
     <loc>https://www.nixdevil.com/posts/old-fortune-city-site/</loc>

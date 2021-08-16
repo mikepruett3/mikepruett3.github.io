@@ -6,22 +6,22 @@
     <description>Recent content in Categories on A haven for Unix &amp; Linux deviants</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Mar 2018 13:23:01 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Aug 2021 20:48:54 -0500</lastBuildDate><atom:link href="https://www.nixdevil.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Updates</title>
+      <link>https://www.nixdevil.com/categories/updates/</link>
+      <pubDate>Sun, 15 Aug 2021 20:48:54 -0500</pubDate>
+      
+      <guid>https://www.nixdevil.com/categories/updates/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Homelab</title>
       <link>https://www.nixdevil.com/categories/homelab/</link>
       <pubDate>Thu, 15 Mar 2018 13:23:01 +0000</pubDate>
       
       <guid>https://www.nixdevil.com/categories/homelab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Updates</title>
-      <link>https://www.nixdevil.com/categories/updates/</link>
-      <pubDate>Sun, 17 Apr 2016 13:05:01 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/categories/updates/</guid>
       <description></description>
     </item>
     
