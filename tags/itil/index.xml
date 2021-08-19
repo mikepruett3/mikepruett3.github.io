@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>itil on A haven for Unix &amp; Linux deviants</title>
-    <link>https://www.nixdevil.com/tags/itil/</link>
-    <description>Recent content in itil on A haven for Unix &amp; Linux deviants</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 14 Mar 2008 09:12:00 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/itil/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>March 2008 Update</title>
-      <link>https://www.nixdevil.com/posts/march-08-update/</link>
-      <pubDate>Fri, 14 Mar 2008 09:12:00 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/march-08-update/</guid>
-      <description>Havent updated this in a while&amp;hellip; but I promise to add more content!
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>itil on A haven for Unix &amp; Linux deviants</title><link>https://www.nixdevil.com/tags/itil/</link><description>Recent content in itil on A haven for Unix &amp; Linux deviants</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 14 Mar 2008 09:12:00 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/itil/index.xml" rel="self" type="application/rss+xml"/><item><title>March 2008 Update</title><link>https://www.nixdevil.com/posts/march-08-update/</link><pubDate>Fri, 14 Mar 2008 09:12:00 +0000</pubDate><guid>https://www.nixdevil.com/posts/march-08-update/</guid><description>Havent updated this in a while&amp;hellip; but I promise to add more content!
 Just as an FYI of what I have been working on in the past 6 - 9 months:
- Implementing a 300+ user Asterisk Implementation Re-vising the companies SOX controls. Creating new IT Procedures, revising old ones. Finishing up a massive NetBackup deployment. Completing an Internal Process Walkthrough. (One every year!) Planning our VMWare V3i implementation. Trying to stay afloat!</description>
-    </item>
-    
-  </channel>
-</rss>
+Implementing a 300+ user Asterisk Implementation Re-vising the companies SOX controls. Creating new IT Procedures, revising old ones. Finishing up a massive NetBackup deployment. Completing an Internal Process Walkthrough. (One every year!) Planning our VMWare V3i implementation. Trying to stay afloat!</description></item></channel></rss>

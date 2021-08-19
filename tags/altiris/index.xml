@@ -1,22 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>altiris on A haven for Unix &amp; Linux deviants</title>
-    <link>https://www.nixdevil.com/tags/altiris/</link>
-    <description>Recent content in altiris on A haven for Unix &amp; Linux deviants</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2009 03:23:59 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/altiris/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Whats up all!!</title>
-      <link>https://www.nixdevil.com/posts/whats-up-all/</link>
-      <pubDate>Sat, 01 Aug 2009 03:23:59 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/whats-up-all/</guid>
-      <description>I am still here. Thankfully my hosting company got their act&amp;rsquo;s together, and now we have plenty of bandwith to support this blog. Recently post have been just my Delicious bookmarks, which are posted to the blog on a nightly basis. (I will do a follow-up post on how to do that.)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>altiris on A haven for Unix &amp; Linux deviants</title><link>https://www.nixdevil.com/tags/altiris/</link><description>Recent content in altiris on A haven for Unix &amp; Linux deviants</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Aug 2009 03:23:59 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/tags/altiris/index.xml" rel="self" type="application/rss+xml"/><item><title>Whats up all!!</title><link>https://www.nixdevil.com/posts/whats-up-all/</link><pubDate>Sat, 01 Aug 2009 03:23:59 +0000</pubDate><guid>https://www.nixdevil.com/posts/whats-up-all/</guid><description>I am still here. Thankfully my hosting company got their act&amp;rsquo;s together, and now we have plenty of bandwith to support this blog. Recently post have been just my Delicious bookmarks, which are posted to the blog on a nightly basis. (I will do a follow-up post on how to do that.)
 Just an update of what I am working on&amp;hellip;
- Upgrading our BlueCoat SG Proxy from an SG400 to a SG510.</description>
-    </item>
-    
-  </channel>
-</rss>
+Upgrading our BlueCoat SG Proxy from an SG400 to a SG510.</description></item></channel></rss>

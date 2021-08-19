@@ -1,107 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Storage on A haven for Unix &amp; Linux deviants</title>
-    <link>https://www.nixdevil.com/categories/storage/</link>
-    <description>Recent content in Storage on A haven for Unix &amp; Linux deviants</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 03 Dec 2009 01:50:05 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/categories/storage/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Evolution of Storage</title>
-      <link>https://www.nixdevil.com/posts/evolution-of-storage/</link>
-      <pubDate>Thu, 03 Dec 2009 01:50:05 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/evolution-of-storage/</guid>
-      <description>I just thought this is a great example of how far our perception of storage has evolved over the years.
-Yes, I am old enough to remember most of these items. :)</description>
-    </item>
-    
-    <item>
-      <title>NetApp vs Equallogics - Part II</title>
-      <link>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/</link>
-      <pubDate>Tue, 25 Aug 2009 17:03:52 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/</guid>
-      <description>Alright, back to this one&amp;hellip;
-So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!</description>
-    </item>
-    
-    <item>
-      <title>NetApp vs Equallogics - Part I</title>
-      <link>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/</link>
-      <pubDate>Mon, 17 Aug 2009 00:24:09 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/</guid>
-      <description>A Twitter follower (@paulstringy) prompted me to write this post. Based on a conversation about the differences between NetApp &amp;amp; Equallogic appliances. Truth be told, there is quite a lot to separate the two. I don&amp;rsquo;t even consider them to be in the same class.
-Equallogic has been around for about 6 or 7 years now, and has penetrated the SMB market with their PS series arrays. There offerings were tantalizing because of the feature set that is offered.</description>
-    </item>
-    
-    <item>
-      <title>Trading in Tapes for Clouds...</title>
-      <link>https://www.nixdevil.com/posts/trading-in-tapes-for-clouds/</link>
-      <pubDate>Tue, 04 Aug 2009 17:24:49 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/trading-in-tapes-for-clouds/</guid>
-      <description>You would not believe how many vendors &amp;amp; ISV&amp;rsquo;s I talk to throught the workweek. On any given day, I usually have to tell some poor sap &amp;ldquo;NO&amp;rdquo;, or &amp;ldquo;I am unintrested in your products, please stop calling&amp;rdquo;! It does take an enormous ammount of paitentce not to just hang up the phone, but I digress.
-The other day I got a rather interesting call, this Vendor wanted to inform me of the Tremendous Cost Savings that my employer can obtain by using their new product.</description>
-    </item>
-    
-    <item>
-      <title>Veritas RedHat Linux Remote Agent – FINAL UPDATE!</title>
-      <link>https://www.nixdevil.com/posts/veritas-lra-final/</link>
-      <pubDate>Thu, 07 Jul 2005 22:08:00 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/veritas-lra-final/</guid>
-      <description>So.. Veritas finally has the answer.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Storage on A haven for Unix &amp; Linux deviants</title><link>https://www.nixdevil.com/categories/storage/</link><description>Recent content in Storage on A haven for Unix &amp; Linux deviants</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 03 Dec 2009 01:50:05 +0000</lastBuildDate><atom:link href="https://www.nixdevil.com/categories/storage/index.xml" rel="self" type="application/rss+xml"/><item><title>Evolution of Storage</title><link>https://www.nixdevil.com/posts/evolution-of-storage/</link><pubDate>Thu, 03 Dec 2009 01:50:05 +0000</pubDate><guid>https://www.nixdevil.com/posts/evolution-of-storage/</guid><description>I just thought this is a great example of how far our perception of storage has evolved over the years.
+Yes, I am old enough to remember most of these items. :)</description></item><item><title>NetApp vs Equallogics - Part II</title><link>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/</link><pubDate>Tue, 25 Aug 2009 17:03:52 +0000</pubDate><guid>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/</guid><description>Alright, back to this one&amp;hellip;
+So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!</description></item><item><title>NetApp vs Equallogics - Part I</title><link>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/</link><pubDate>Mon, 17 Aug 2009 00:24:09 +0000</pubDate><guid>https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/</guid><description>A Twitter follower (@paulstringy ) prompted me to write this post. Based on a conversation about the differences between NetApp &amp;amp; Equallogic appliances. Truth be told, there is quite a lot to separate the two. I don&amp;rsquo;t even consider them to be in the same class.
+Equallogic has been around for about 6 or 7 years now, and has penetrated the SMB market with their PS series arrays. There offerings were tantalizing because of the feature set that is offered.</description></item><item><title>Trading in Tapes for Clouds...</title><link>https://www.nixdevil.com/posts/trading-in-tapes-for-clouds/</link><pubDate>Tue, 04 Aug 2009 17:24:49 +0000</pubDate><guid>https://www.nixdevil.com/posts/trading-in-tapes-for-clouds/</guid><description>You would not believe how many vendors &amp;amp; ISV&amp;rsquo;s I talk to throught the workweek. On any given day, I usually have to tell some poor sap &amp;ldquo;NO&amp;rdquo;, or &amp;ldquo;I am unintrested in your products, please stop calling&amp;rdquo;! It does take an enormous ammount of paitentce not to just hang up the phone, but I digress.
+The other day I got a rather interesting call, this Vendor wanted to inform me of the Tremendous Cost Savings that my employer can obtain by using their new product.</description></item><item><title>Veritas RedHat Linux Remote Agent – FINAL UPDATE!</title><link>https://www.nixdevil.com/posts/veritas-lra-final/</link><pubDate>Thu, 07 Jul 2005 22:08:00 +0000</pubDate><guid>https://www.nixdevil.com/posts/veritas-lra-final/</guid><description>So.. Veritas finally has the answer.
 It was a problem with the tape backup device that we were using. Tried to backup/restore from disk&amp;hellip; and it worked! Now I have to work up a proposal for a new backup server for Oracle!! Whoo Hoo!!!
-On a lighter note, I have been reviewing the documentation for &amp;ldquo;pigsentry&amp;rdquo;. Its a perl script that can be configured to send out an e-mail when certain &amp;ldquo;attacks&amp;rdquo; are logged in snort.</description>
-    </item>
-    
-    <item>
-      <title>Veritas RedHat Linux Remote Agent – Update (again!)</title>
-      <link>https://www.nixdevil.com/posts/veritas-lra-update-2/</link>
-      <pubDate>Mon, 13 Jun 2005 23:48:00 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/veritas-lra-update-2/</guid>
-      <description>Ok&amp;hellip; Veritas is ignoring me!!!
+On a lighter note, I have been reviewing the documentation for &amp;ldquo;pigsentry&amp;rdquo;. Its a perl script that can be configured to send out an e-mail when certain &amp;ldquo;attacks&amp;rdquo; are logged in snort.</description></item><item><title>Veritas RedHat Linux Remote Agent – Update (again!)</title><link>https://www.nixdevil.com/posts/veritas-lra-update-2/</link><pubDate>Mon, 13 Jun 2005 23:48:00 +0000</pubDate><guid>https://www.nixdevil.com/posts/veritas-lra-update-2/</guid><description>Ok&amp;hellip; Veritas is ignoring me!!!
 I am waiting paitently for some resolution on this, but to no avail!
 In the meantime, I have been working on Deploying the &amp;ldquo;Cisco VPN Client&amp;rdquo; via Group Policy.
-Group Policy is awesome&amp;hellip; I have a renewed faith in Microsofts Enginering staff. Still not as good or easy as Norton&amp;rsquo;s Novell Installer software&amp;hellip; (Name that escapes me! Anyone who knows, chime in!) but it works!</description>
-    </item>
-    
-    <item>
-      <title>Veritas RedHat Linux Remote Agent - Update</title>
-      <link>https://www.nixdevil.com/posts/veritas-lra-update-1/</link>
-      <pubDate>Fri, 10 Jun 2005 23:14:00 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/veritas-lra-update-1/</guid>
-      <description>Still not working as of yet. I have been on the Veritas support forums for 2 days now. I posted a question to there technical staff, and I got one responce:
- Update the client with a patch.
- I&amp;rsquo;ve update the RHEL server with the patch, and still no success.
-The problem is, I can backup anything from the RHEL3 server&amp;hellip; but I cannot restore it back to the server.</description>
-    </item>
-    
-    <item>
-      <title>Veritas Remote Agent for Linux</title>
-      <link>https://www.nixdevil.com/posts/veritas-remote-agent-for-linux/</link>
-      <pubDate>Wed, 08 Jun 2005 22:59:00 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/veritas-remote-agent-for-linux/</guid>
-      <description>One of my projects this year is to find a new backup solution for our Oracle servers.
+Group Policy is awesome&amp;hellip; I have a renewed faith in Microsofts Enginering staff. Still not as good or easy as Norton&amp;rsquo;s Novell Installer software&amp;hellip; (Name that escapes me! Anyone who knows, chime in!) but it works!</description></item><item><title>Veritas RedHat Linux Remote Agent - Update</title><link>https://www.nixdevil.com/posts/veritas-lra-update-1/</link><pubDate>Fri, 10 Jun 2005 23:14:00 +0000</pubDate><guid>https://www.nixdevil.com/posts/veritas-lra-update-1/</guid><description>Still not working as of yet. I have been on the Veritas support forums for 2 days now. I posted a question to there technical staff, and I got one responce:
+Update the client with a patch.
+I&amp;rsquo;ve update the RHEL server with the patch, and still no success.
+The problem is, I can backup anything from the RHEL3 server&amp;hellip; but I cannot restore it back to the server.</description></item><item><title>Veritas Remote Agent for Linux</title><link>https://www.nixdevil.com/posts/veritas-remote-agent-for-linux/</link><pubDate>Wed, 08 Jun 2005 22:59:00 +0000</pubDate><guid>https://www.nixdevil.com/posts/veritas-remote-agent-for-linux/</guid><description>One of my projects this year is to find a new backup solution for our Oracle servers.
 We currently use a software piece called &amp;ldquo;Lone Tar&amp;rdquo;. Great for backing up a single server, back in 1993&amp;hellip; but with todays larger tape capacities, and the advent of tape libraries LT just doesn&amp;rsquo;t cut the mustard!!
-Currently, I am using a set of BASH shell scripts and CRONTAB to schedule this whole ordeal.</description>
-    </item>
-    
-    <item>
-      <title>StorageTek StreamLine SL8500</title>
-      <link>https://www.nixdevil.com/posts/storagetek-streamline-sl8500/</link>
-      <pubDate>Fri, 09 Jul 2004 00:36:00 +0000</pubDate>
-      
-      <guid>https://www.nixdevil.com/posts/storagetek-streamline-sl8500/</guid>
-      <description>Many of you might not even be into IT or Computer related equipment&amp;hellip; but just the sheer size of this alone makes even the meager feel small.
-StorageTek Product: StreamLine?2 SL8500 modular library systemI want one for the house!!!</description>
-    </item>
-    
-  </channel>
-</rss>
+Currently, I am using a set of BASH shell scripts and CRONTAB to schedule this whole ordeal.</description></item><item><title>StorageTek StreamLine SL8500</title><link>https://www.nixdevil.com/posts/storagetek-streamline-sl8500/</link><pubDate>Fri, 09 Jul 2004 00:36:00 +0000</pubDate><guid>https://www.nixdevil.com/posts/storagetek-streamline-sl8500/</guid><description>Many of you might not even be into IT or Computer related equipment&amp;hellip; but just the sheer size of this alone makes even the meager feel small.
+StorageTek Product: StreamLine?2 SL8500 modular library system I want one for the house!!!</description></item></channel></rss>

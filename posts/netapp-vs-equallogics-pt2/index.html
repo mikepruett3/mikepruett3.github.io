@@ -1,281 +1,255 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>NetApp vs Equallogics - Part II - A haven for Unix & Linux deviants</title><link rel="apple-touch-icon" href="https://www.nixdevil.com/images/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="https://www.nixdevil.com/images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="https://www.nixdevil.com/images/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="https://www.nixdevil.com/images/favicons/manifest.json">
-<link rel="icon" href="https://www.nixdevil.com/images/favicons/favicon.ico">
-<meta name="keywords" content="" />
-<meta name="description" content="" /><meta itemprop="name" content="NetApp vs Equallogics - Part II">
-<meta itemprop="description" content="Alright, back to this one&hellip;
-So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!"><meta itemprop="datePublished" content="2009-08-25T17:03:52+00:00" />
-<meta itemprop="dateModified" content="2009-08-25T17:03:52+00:00" />
-<meta itemprop="wordCount" content="910">
-<meta itemprop="keywords" content="netapp,equallogics," /><meta property="og:title" content="NetApp vs Equallogics - Part II" />
-<meta property="og:description" content="Alright, back to this one&hellip;
-So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2009-08-25T17:03:52+00:00" />
-<meta property="article:modified_time" content="2009-08-25T17:03:52+00:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="NetApp vs Equallogics - Part II"/>
-<meta name="twitter:description" content="Alright, back to this one&hellip;
-So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!"/>
-<meta data-name="palette" content="green"><link rel=stylesheet href="https://www.nixdevil.com/css/bundle.min.f2209a83bfa7f733540426e3abe2edccef95ac63c8535e2b3750caccec2f85ed.css" integrity="sha256-8iCag7&#43;n9zNUBCbjq&#43;LtzO&#43;VrGPIU14rN1DKzOwvhe0=" crossorigin="anonymous"><script src="https://www.nixdevil.com/js/bundle.min.7e0d9da422e1785c9d1474d421aa85bee81bb5aeb873bda0beaf515b6f9b039f.js" integrity="sha256-fg2dpCLheFydFHTUIaqFvugbta64c72gvq9RW2&#43;bA58=" crossorigin="anonymous"></script><script defer src="https://www.nixdevil.com/js/katex.efb27591b98224b170a1dcd34b1b5ef4a9af1ae7a0ac31442742e776e52b60f9.js" integrity="sha256-77J1kbmCJLFwodzTSxte9KmvGuegrDFEJ0LnduUrYPk=" crossorigin="anonymous"></script>
-</head><body class="mode-dark"><header><nav class="navbar navbar-expand-xl fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="https://www.nixdevil.com/">
-      <img class="logo" alt="Logo" src="https://www.nixdevil.com/images/logo.webp" loading="lazy"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action="https://www.nixdevil.com/search">
-  <div class="input-group input-group-sm">
-    <button class="btn btn-search disabled position-absolute left-0" type="submit"><i class="fas fa-fw fa-search"></i></button>
-    <input class="form-control rounded-pill" id="searchQuery" name="q" type="search" aria-label="Search">
-  </div>
-</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class="nav-item">
-          <a class="nav-link" href="https://www.nixdevil.com/archives/">
-            <i class="fas fa-fw fa-file-archive"></i>Archives
-          </a>
-        </li><li class="nav-item">
-          <a class="nav-link" href="https://www.nixdevil.com/categories/">
-            <i class="fas fa-fw fa-folder"></i>Categories
-          </a>
-        </li><li class="nav-item">
-          <a class="nav-link" href="https://www.nixdevil.com/tags/">
-            <i class="fas fa-fw fa-tags"></i>Tags
-          </a>
-        </li><li class="nav-item dropdown">
-          <a class="nav-link" id="navbarDropdown-dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fas fa-fw fa-chevron-circle-down"></i>Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown-dropdown"><li>
-              <a class="dropdown-item"
-                href="https://github.com/mikepruett3" target="_blank">
-                <i class="fab fa-fw fa-github"></i>github
-              </a>
-            </li><li>
-              <a class="dropdown-item"
-                href="https://www.nixdevil.com/mikes-wiki/">
-                <i class="fab fa-fw fa-wikipedia-w"></i>Mike&#39;s Wiki
-              </a>
-            </li></ul>
-        </li><li class="nav-item">
-  <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasSettings" role="button"
-    aria-controls="offcanvasSettings">
-    <i class="fas fa-fw fa-sliders-h"></i> Settings
-  </a>
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>NetApp vs Equallogics - Part II - A haven for Unix & Linux deviants</title><link rel=apple-touch-icon href=https://www.nixdevil.com/images/favicons/apple-touch-icon.png sizes=180x180>
+<link rel=icon href=https://www.nixdevil.com/images/favicons/favicon-32x32.png sizes=32x32 type=image/png>
+<link rel=icon href=https://www.nixdevil.com/images/favicons/favicon-16x16.png sizes=16x16 type=image/png>
+<link rel=manifest href=https://www.nixdevil.com/images/favicons/manifest.json>
+<link rel=icon href=https://www.nixdevil.com/images/favicons/favicon.ico>
+<meta name=keywords content>
+<meta name=description content><meta itemprop=name content="NetApp vs Equallogics - Part II">
+<meta itemprop=description content="Alright, back to this one&mldr;
+So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!"><meta itemprop=datePublished content="2009-08-25T17:03:52+00:00">
+<meta itemprop=dateModified content="2009-08-25T17:03:52+00:00">
+<meta itemprop=wordCount content="910">
+<meta itemprop=keywords content="netapp,equallogics,"><meta property="og:title" content="NetApp vs Equallogics - Part II">
+<meta property="og:description" content="Alright, back to this one&mldr;
+So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.nixdevil.com/posts/netapp-vs-equallogics-pt2/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2009-08-25T17:03:52+00:00">
+<meta property="article:modified_time" content="2009-08-25T17:03:52+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="NetApp vs Equallogics - Part II">
+<meta name=twitter:description content="Alright, back to this one&mldr;
+So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!">
+<meta data-name=palette content="green"><link rel=stylesheet href=https://www.nixdevil.com/css/bundle.min.4a5890fb45361897072de8c93e075b7d2384a3635e3bfc9396427ee019bcc13c.css integrity="sha256-SliQ+0U2GJcHLejJPgdbfSOEo2NeO/yTlkJ+4Bm8wTw=" crossorigin=anonymous><script src=https://www.nixdevil.com/js/bundle.min.8bb79b856d06236f63b6af4aebd425051ca135725c488649c289ba919dc77cd9.js integrity="sha256-i7ebhW0GI29jtq9K69QlBRyhNXJcSIZJwom6kZ3HfNk=" crossorigin=anonymous></script><script defer src=https://www.nixdevil.com/js/katex.efb27591b98224b170a1dcd34b1b5ef4a9af1ae7a0ac31442742e776e52b60f9.js integrity="sha256-77J1kbmCJLFwodzTSxte9KmvGuegrDFEJ0LnduUrYPk=" crossorigin=anonymous></script>
+</head><body class=mode-dark><header><nav class="navbar navbar-expand-xl fixed-top">
+<div class=container>
+<a class=navbar-brand href=https://www.nixdevil.com/>
+<img class=logo alt=Logo src=https://www.nixdevil.com/images/logo.webp loading=lazy></a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=navbarSupportedContent>
+<ul class="navbar-nav me-1 mb-2 mb-lg-0"><form class="search-bar d-flex ms-1" action=https://www.nixdevil.com/search>
+<div class="input-group input-group-sm">
+<button class="btn btn-search disabled position-absolute left-0" type=submit><i class="fas fa-fw fa-search"></i></button>
+<input class="form-control rounded-pill" id=searchQuery name=q type=search aria-label=Search>
+</div>
+</form></ul><ul class="navbar-nav me-1 mb-2 mb-lg-0 me-1 ms-auto"><li class=nav-item>
+<a class=nav-link href=https://www.nixdevil.com/archives/>
+<i class="fas fa-fw fa-file-archive"></i>Archives
+</a>
+</li><li class=nav-item>
+<a class=nav-link href=https://www.nixdevil.com/categories/>
+<i class="fas fa-fw fa-folder"></i>Categories
+</a>
+</li><li class=nav-item>
+<a class=nav-link href=https://www.nixdevil.com/tags/>
+<i class="fas fa-fw fa-tags"></i>Tags
+</a>
+</li><li class="nav-item dropdown">
+<a class=nav-link id=navbarDropdown-dropdown role=button data-bs-toggle=dropdown aria-expanded=false>
+<i class="fas fa-fw fa-chevron-circle-down"></i>Dropdown
+</a>
+<ul class=dropdown-menu aria-labelledby=navbarDropdown-dropdown><li>
+<a class=dropdown-item href=https://github.com/mikepruett3 target=_blank>
+<i class="fab fa-fw fa-github"></i>github
+</a>
+</li><li>
+<a class=dropdown-item href=https://www.nixdevil.com/mikes-wiki/>
+<i class="fab fa-fw fa-wikipedia-w"></i>Mike's Wiki
+</a>
+</li></ul>
+</li><li class=nav-item>
+<a class=nav-link data-bs-toggle=offcanvas href=#offcanvasSettings role=button aria-controls=offcanvasSettings>
+<i class="fas fa-fw fa-sliders-h"></i> Settings
+</a>
 </li>
-
-<div class="offcanvas offcanvas-end surface h-100" tabindex="-1" id="offcanvasSettings"
-  aria-labelledby="offcanvasSettingsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" w id="offcanvasSettingsLabel"><i class="fas fa-fw fa-sliders-h"></i> Settings</h5>
-    <a role="button" data-bs-dismiss="offcanvas" aria-label="Close">
-      <span class="fas fa-2x fa-fw fa-times"></span>
-    </a>
-  </div>
-  <div class="offcanvas-body">
+<div class="offcanvas offcanvas-end surface h-100" tabindex=-1 id=offcanvasSettings aria-labelledby=offcanvasSettingsLabel>
+<div class=offcanvas-header>
+<h5 class=offcanvas-title w id=offcanvasSettingsLabel><i class="fas fa-fw fa-sliders-h"></i> Settings</h5>
+<a role=button data-bs-dismiss=offcanvas aria-label=Close>
+<span class="fas fa-2x fa-fw fa-times"></span>
+</a>
+</div>
+<div class=offcanvas-body>
 <section class="setting palettes">
-  <form class="row">
-    <div class="col-auto">
-      <label><i class="fas fa-fw fa-palette"></i> Palette</label>
-    </div>
-    <div class="col-auto ms-auto">
-      <span id="btnPalette" class="btn btn-sm"><i class="fas fa-eye-dropper"></i></span>
-    </div>
-  </form>
-  <div class="container mt-2 visually-hidden" id="palettePicker">
-    <div class="btn-group"><button type="button" id="palette-blue" title="Blue" 
-          class="btn btn-sm palette bg-blue d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-blue-gray" title="Blue Gray" 
-          class="btn btn-sm palette bg-blue-gray d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-brown" title="Brown" 
-          class="btn btn-sm palette bg-brown d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-cyan" title="Cyan" 
-          class="btn btn-sm palette bg-cyan d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-green" title="Green" 
-          class="btn btn-sm palette bg-green d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-indigo" title="Indigo" 
-          class="btn btn-sm palette bg-indigo d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-orange" title="Orange" 
-          class="btn btn-sm palette bg-orange d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-pink" title="Pink" 
-          class="btn btn-sm palette bg-pink d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-purple" title="Purple" 
-          class="btn btn-sm palette bg-purple d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-red" title="Red" 
-          class="btn btn-sm palette bg-red d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-teal" title="Teal" 
-          class="btn btn-sm palette bg-teal d-flex align-items-center justify-content-center">
-        </button><button type="button" id="palette-yellow" title="Yellow" 
-          class="btn btn-sm palette bg-yellow d-flex align-items-center justify-content-center">
-        </button></button>
-    </div>
-  </div>
+<form class=row>
+<div class=col-auto>
+<label><i class="fas fa-fw fa-palette"></i> Palette</label>
+</div>
+<div class="col-auto ms-auto">
+<span id=btnPalette class="btn btn-sm"><i class="fas fa-eye-dropper"></i></span>
+</div>
+</form>
+<div class="container mt-2 visually-hidden" id=palettePicker>
+<div class=btn-group><button type=button id=palette-blue title=Blue class="btn btn-sm palette bg-blue d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-blue-gray title="Blue Gray" class="btn btn-sm palette bg-blue-gray d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-brown title=Brown class="btn btn-sm palette bg-brown d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-cyan title=Cyan class="btn btn-sm palette bg-cyan d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-green title=Green class="btn btn-sm palette bg-green d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-indigo title=Indigo class="btn btn-sm palette bg-indigo d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-orange title=Orange class="btn btn-sm palette bg-orange d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-pink title=Pink class="btn btn-sm palette bg-pink d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-purple title=Purple class="btn btn-sm palette bg-purple d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-red title=Red class="btn btn-sm palette bg-red d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-teal title=Teal class="btn btn-sm palette bg-teal d-flex align-items-center justify-content-center">
+</button><button type=button id=palette-yellow title=Yellow class="btn btn-sm palette bg-yellow d-flex align-items-center justify-content-center">
+</button></button>
+</div>
+</div>
 </section></div>
 </div></ul>
-    </div>
-  </div>
+</div>
+</div>
 </nav>
 </header>
-<main role="main" class="container">
-      <div class="row content">
-<div class="col-lg-8">
-  <div class="container"><nav class="row" aria-label="breadcrumb">
-  <ol class="breadcrumb surface"><li class="breadcrumb-item"><a href="https://www.nixdevil.com/">Home</a></li><li class="breadcrumb-item"><a href="https://www.nixdevil.com/posts/">Posts</a></li><li class="breadcrumb-item active">NetApp vs Equallogics - Part II</li></ol>
-</nav><article class="post row surface"><div class="post-panel-wrapper">
-  <div class="post-panel d-flex flex-column">
-    <a id="sidebarToggler" class="action d-none d-lg-block" role="button">
-  <i class="fas fa-fw fa-expand-alt fa-rotate-45"></i>
+<main role=main class=container>
+<div class="row content">
+<div class=col-lg-8>
+<div class=container><nav class=row aria-label=breadcrumb>
+<ol class="breadcrumb surface"><li class=breadcrumb-item><a href=https://www.nixdevil.com/>Home</a></li><li class=breadcrumb-item><a href=https://www.nixdevil.com/posts/>Posts</a></li><li class="breadcrumb-item active">NetApp vs Equallogics - Part II</li></ol>
+</nav><article class="post row surface"><div class=post-panel-wrapper>
+<div class="post-panel d-flex flex-column">
+<a id=sidebarToggler class="action d-none d-lg-block" role=button>
+<i class="fas fa-fw fa-expand-alt fa-rotate-45"></i>
 </a>
-  
-    
-
-    
-    
-    
-  </div>
+</div>
 </div>
 <h1 class="post-title my-3">NetApp vs Equallogics - Part II
 </h1><div class="post-meta mb-3"><span class="post-date me-2">
-    <i class="fas fa-fw fa-calendar-alt"></i>Aug 25, 2009
-  </span><span class="post-reading-time me-2">
-    <i class="fas fa-fw fa-coffee"></i>5 min read
-  </span><a href="https://www.nixdevil.com/categories/storage/" class="post-taxonomy">#Storage</a><a href="https://www.nixdevil.com/tags/netapp/" class="post-taxonomy">#netapp</a><a href="https://www.nixdevil.com/tags/equallogics/" class="post-taxonomy">#equallogics</a></div>
-<div class="post-content mb-3"><p>Alright, back to this one&hellip;</p>
-<p>So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!) This was a large deployment, over 5,000 seats. The Exchange Infrastructure was composed of 25 different Exchange Mailbox servers, all using Direct-Attached (DAS) storage. Back then we had looked at EMC, and NetApp. The only problem with the NetApp offering at the time, was not an actual NetApp issue. Microsoft had listed in their documentation that Exchange 2000 required DAS or SAN storage, I.E. a block level device. NetApp only offered NAS appliances at the time. This pretty much forced us to go with an EMC solution. Years later, Microsoft is still pushing that line&hellip; but NetApp has gotten a whole-lot better.</p>
-<p>At my current employment, we use a local Systems-Integrator for all of our big projects. Its not that we couldn&rsquo;t do the work ourself, but the IT department consists of only 7 people. Half of which are on the Desktop side. We had engaged our SI to work on our Upcoming VMware deployment, and our Rep was curious on our Storage selection. When I discussed with him some of the vendors we had looked at, he briefly mentioned that I should look at NetApp. Considering my previous background, I told him that I was uninterested in a NAS appliance, and that we needed more Block-Level Storage. He corrected me, and stated that the NetApp portfolio had grown to include Fiber Channel, iSCSI, as well as CIFS &amp; NFS shares. When I asked him about storage performance, he also mentioned that NetApp offered FC &amp; SATA disks. Now we have worked with this SI for a long time, and I did value our Rep&rsquo;s opinion. By the way, if you are in Orange County and are looking for a great team to work with&hellip; I cannot  recommend <a href="http://www.vlsystems.com" target="_blank">VL Systems</a>
- enough!</p>
-<p>So now with XioTech out of the way, our decisions where down to Pillar Data, EMC &amp; NetApp. We entertained the local NetApp Rep at our offices, while he was demonstrating some of the power that the appliances had to offer. Through that discussion, I was able to put together a set of expanded requirements that my employer needed. One of the biggest requirements was the need for De-Duplicated storage. Let me rephrase that, we wanted De-Duplicated Primary Storage! When we presented this question to the other two vendors, they both balked and told us that we were crazy!</p>
+<i class="fas fa-fw fa-calendar-alt"></i>Aug 25, 2009
+</span><span class="post-reading-time me-2">
+<i class="fas fa-fw fa-coffee"></i>5 min read
+</span><a href=https://www.nixdevil.com/categories/storage/ class=post-taxonomy>#Storage</a><a href=https://www.nixdevil.com/tags/netapp/ class=post-taxonomy>#netapp</a><a href=https://www.nixdevil.com/tags/equallogics/ class=post-taxonomy>#equallogics</a></div>
+<div class="post-content mb-3"><p>Alright, back to this one&mldr;</p>
+<p>So I mentioned in the previous post, that I was going to point out the differences in the NetApp offering. NetApp was actually not on my shortlist right away. To me, they had always been a provider of NAS appliances. I had looked at their stuff several years earlier. At that time, I was looking for Storage for an Exchange 5.5 to 2000 migration. (Not my current employer!) This was a large deployment, over 5,000 seats. The Exchange Infrastructure was composed of 25 different Exchange Mailbox servers, all using Direct-Attached (DAS) storage. Back then we had looked at EMC, and NetApp. The only problem with the NetApp offering at the time, was not an actual NetApp issue. Microsoft had listed in their documentation that Exchange 2000 required DAS or SAN storage, I.E. a block level device. NetApp only offered NAS appliances at the time. This pretty much forced us to go with an EMC solution. Years later, Microsoft is still pushing that line&mldr; but NetApp has gotten a whole-lot better.</p>
+<p>At my current employment, we use a local Systems-Integrator for all of our big projects. Its not that we couldn&rsquo;t do the work ourself, but the IT department consists of only 7 people. Half of which are on the Desktop side. We had engaged our SI to work on our Upcoming VMware deployment, and our Rep was curious on our Storage selection. When I discussed with him some of the vendors we had looked at, he briefly mentioned that I should look at NetApp. Considering my previous background, I told him that I was uninterested in a NAS appliance, and that we needed more Block-Level Storage. He corrected me, and stated that the NetApp portfolio had grown to include Fiber Channel, iSCSI, as well as CIFS & NFS shares. When I asked him about storage performance, he also mentioned that NetApp offered FC & SATA disks. Now we have worked with this SI for a long time, and I did value our Rep&rsquo;s opinion. By the way, if you are in Orange County and are looking for a great team to work with&mldr; I cannot  recommend <a href=http://www.vlsystems.com target=_blank>VL Systems</a>
+enough!</p>
+<p>So now with XioTech out of the way, our decisions where down to Pillar Data, EMC & NetApp. We entertained the local NetApp Rep at our offices, while he was demonstrating some of the power that the appliances had to offer. Through that discussion, I was able to put together a set of expanded requirements that my employer needed. One of the biggest requirements was the need for De-Duplicated storage. Let me rephrase that, we wanted De-Duplicated Primary Storage! When we presented this question to the other two vendors, they both balked and told us that we were crazy!</p>
 <p>&ldquo;You can&rsquo;t De-Dupe Primary Storage! You will impact performance on the array.&rdquo;, said both vendors. EMC at least had some sort of positive rebuttal, as they had just purchased Data Domain. &ldquo;We can De-Dupe, but not on Primary Storage.&rdquo; Again, these were not the answers we wanted to hear. All of their griping, just made the NetApp offering more sweet. Ultimately the real decision came down to price. (Like Always!)</p>
-<p>Both EMC &amp; Pillar had done an excellent job of discounting their offerings, down to the $180k to $200k range. This would have met our budget by just a hair. But when the NetApp quote came in, both the IT Director &amp; I were floored! The Systems Integrator had done an awesome job selling our company to NetApp, and really gave them an understanding on how we do business. He assured NetApp that once we had selected a new Primary Storage platform, that we would continue expansion on that device. (Told you that VLS is a great partner to work with.) NetApp&rsquo;s quote came in at less than $150k. Coupled with the fact that we could De-Dupe Primary Storage&hellip; and we were sold!</p>
-<p>So now you know how we went from a Equallogics array to a NetApp appliance. I think that its prudent we cover some of the major differneces between the two&hellip;</p>
+<p>Both EMC & Pillar had done an excellent job of discounting their offerings, down to the $180k to $200k range. This would have met our budget by just a hair. But when the NetApp quote came in, both the IT Director & I were floored! The Systems Integrator had done an awesome job selling our company to NetApp, and really gave them an understanding on how we do business. He assured NetApp that once we had selected a new Primary Storage platform, that we would continue expansion on that device. (Told you that VLS is a great partner to work with.) NetApp&rsquo;s quote came in at less than $150k. Coupled with the fact that we could De-Dupe Primary Storage&mldr; and we were sold!</p>
+<p>So now you know how we went from a Equallogics array to a NetApp appliance. I think that its prudent we cover some of the major differneces between the two&mldr;</p>
 <ol>
 <li>
-<p>The Equallogics arrays only offer iSCSI protocols for block-level host connectivity, were as the NetApp appliances offer Fiber Channel &amp; iSCSI. (Soon to offer FCoE)</p>
+<p>The Equallogics arrays only offer iSCSI protocols for block-level host connectivity, were as the NetApp appliances offer Fiber Channel & iSCSI. (Soon to offer FCoE)</p>
 </li>
 <li>
-<p>NetApp appliances also offer CIFS &amp; NFS shares to be directly hosted off of the Storage Controllers (i.e. Filers), the EQL arrays require an additional server to attempt this feat.</p>
+<p>NetApp appliances also offer CIFS & NFS shares to be directly hosted off of the Storage Controllers (i.e. Filers), the EQL arrays require an additional server to attempt this feat.</p>
 </li>
 <li>
-<p>EQL arrays offer SATA disks in an array (at the time, the do offer SAS &amp; SSD&rsquo;s now), NetApp offers Fiber Channel, SATA, and SAS disks.</p>
+<p>EQL arrays offer SATA disks in an array (at the time, the do offer SAS & SSD&rsquo;s now), NetApp offers Fiber Channel, SATA, and SAS disks.</p>
 </li>
 <li>
 <p>When expanding storage, EQL array&rsquo;s are limited to GigE connectivity for the interconnects, NetApp supports GigE, 10GB, and FC.</p>
 </li>
 <li>
-<p>Because of their iSCSI only connectivity, the EQL arrays are outfitted with several GigE Host-Facing interconnects, NetApp supports several connectivity options&hellip; you decide what works.</p>
+<p>Because of their iSCSI only connectivity, the EQL arrays are outfitted with several GigE Host-Facing interconnects, NetApp supports several connectivity options&mldr; you decide what works.</p>
 </li>
 </ol>
-<p>I have to say that if you are looking for a workhorse array that you can expand with, the NetApp appliances is a solid offering. So far we have consolidated about 80% of our storage needs on to the NetApp filers&hellip; and have reaped a 40% De-Duplication in total storage. So for every 1TB of storage, we are actually storing approximately 410GB. Thats a huge cost savings, and allows our department to lower its costs per year!</p>
+<p>I have to say that if you are looking for a workhorse array that you can expand with, the NetApp appliances is a solid offering. So far we have consolidated about 80% of our storage needs on to the NetApp filers&mldr; and have reaped a 40% De-Duplication in total storage. So for every 1TB of storage, we are actually storing approximately 410GB. Thats a huge cost savings, and allows our department to lower its costs per year!</p>
 <p>Please feel free to comment. I am interested in your feedback.</p>
-<p>You might want to go back, and read <a href="/posts/netapp-vs-equallogics-pt1">Part I</a>
-&hellip;</p>
-</div><hr /><div class="post-navs d-flex mb-3 justify-content-between">
-  <div class="post-nav w-50"><div class="prev-post btn btn-sm">
-      <a href="https://www.nixdevil.com/posts/cfw-5-00-m33-to-5-50-gen-b/">CFW 5.00 M33 to 5.50 GEN-B
+<p>You might want to go back, and read <a href=/posts/netapp-vs-equallogics-pt1>Part I</a>
+&mldr;</p>
+</div><hr><div class="post-navs d-flex mb-3 justify-content-between">
+<div class="post-nav w-50"><div class="prev-post btn btn-sm">
+<a href=https://www.nixdevil.com/posts/cfw-5-00-m33-to-5-50-gen-b/>CFW 5.00 M33 to 5.50 GEN-B
 </a>
-    </div></div>
-  <div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
-      <a href="https://www.nixdevil.com/posts/binchotan-stove/">The Binchotan Stove
+</div></div>
+<div class="post-nav flex-row-reverse"><div class="next-post btn btn-sm">
+<a href=https://www.nixdevil.com/posts/binchotan-stove/>The Binchotan Stove
 </a>
-    </div></div>
-</div><section class="related-posts">
-    <h3>Related Posts</h3>
-    <ul class="related-posts"><li><a href="https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/">NetApp vs Equallogics - Part I
+</div></div>
+</div><section class=related-posts>
+<h3>Related Posts</h3>
+<ul class=related-posts><li><a href=https://www.nixdevil.com/posts/netapp-vs-equallogics-pt1/>NetApp vs Equallogics - Part I
 </a></li></ul>
-  </section></article><div class="post-comments surface row"></div></div>
+</section></article><div class="post-comments surface row"></div></div>
 </div><aside class="col-lg-4 sidebar d-flex">
-  <div class="container"><section class="profile surface row text-center">
-  <div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src="https://www.nixdevil.com/uploads/avatar.jpg" alt="Mike Pruett" loading="lazy"></div>
-  <div class="col-12 profile-meta"><div class="profile-name">Mike Pruett</div><div class="profile-bio">Super passionate about Linux, Open Source Software, Beer, and Life.</div><div class="profile-company"><i class="fas fa-fw fa-building"></i>Nixdevil.com</div><div class="profile-location"><i class="fas fa-fw fa-map-marker-alt"></i>Texas</div><div class="profile-about"><i class="fas fa-fw fa-info-circle"></i><a href="https://www.nixdevil.com/about/">About</a></div></div>
+<div class=container><section class="profile surface row text-center">
+<div class="col-12 d-flex align-items-center justify-content-center"><img class="profile-avatar rounded-circle" src=https://www.nixdevil.com/uploads/avatar.jpg alt="Mike Pruett" loading=lazy></div>
+<div class="col-12 profile-meta"><div class=profile-name>Mike Pruett</div><div class=profile-bio>Super passionate about Linux, Open Source Software, Beer, and Life.</div><div class=profile-company><i class="fas fa-fw fa-building"></i>Nixdevil.com</div><div class=profile-location><i class="fas fa-fw fa-map-marker-alt"></i>Texas</div><div class=profile-about><i class="fas fa-fw fa-info-circle"></i><a href=https://www.nixdevil.com/about/>About</a></div></div>
 </section>
-  <section class="recent-posts row surface">
-  <h4>Recent Posts</h4>
-  <ul><li><a href="https://www.nixdevil.com/posts/move-to-hugo/">Move to Hugo
-</a></li><li><a href="https://www.nixdevil.com/posts/dnsmasq-for-homelab/">Using dnsmasq for your Homelab
-</a></li><li><a href="https://www.nixdevil.com/posts/new-domain-new-rules/">New Domain, New Rules
-</a></li><li><a href="https://www.nixdevil.com/posts/old-fortune-city-site/">Old Fortune City Site
-</a></li><li><a href="https://www.nixdevil.com/posts/evolution-of-storage/">Evolution of Storage
+<section class="recent-posts row surface">
+<h4>Recent Posts</h4>
+<ul><li><a href=https://www.nixdevil.com/posts/move-to-hugo/>Move to Hugo
+</a></li><li><a href=https://www.nixdevil.com/posts/dnsmasq-for-homelab/>Using dnsmasq for your Homelab
+</a></li><li><a href=https://www.nixdevil.com/posts/new-domain-new-rules/>New Domain, New Rules
+</a></li><li><a href=https://www.nixdevil.com/posts/old-fortune-city-site/>Old Fortune City Site
+</a></li><li><a href=https://www.nixdevil.com/posts/evolution-of-storage/>Evolution of Storage
 </a></li></ul>
 </section><section class="taxonomy-categories row surface">
-      <h4>
-        <a href="https://www.nixdevil.com/categories">Categories</a>
-      </h4>
-      <div><a href="https://www.nixdevil.com/categories/updates/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Updates">
-          Updates <span class="badge rounded-pill">23</span>
-        </a><a href="https://www.nixdevil.com/categories/open-source/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Open Source">
-          Open Source <span class="badge rounded-pill">9</span>
-        </a><a href="https://www.nixdevil.com/categories/storage/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Storage">
-          Storage <span class="badge rounded-pill">9</span>
-        </a><a href="https://www.nixdevil.com/categories/media/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Media">
-          Media <span class="badge rounded-pill">6</span>
-        </a><a href="https://www.nixdevil.com/categories/games/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Games">
-          Games <span class="badge rounded-pill">4</span>
-        </a><a href="https://www.nixdevil.com/categories/homelab/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Homelab">
-          Homelab <span class="badge rounded-pill">3</span>
-        </a></div>
-    </section><section class="taxonomy-tags row surface">
-      <h4>
-        <a href="https://www.nixdevil.com/tags">Tags</a>
-      </h4>
-      <div><a href="https://www.nixdevil.com/tags/website/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="website">
-          website <span class="badge rounded-pill">10</span>
-        </a><a href="https://www.nixdevil.com/tags/security/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="security">
-          security <span class="badge rounded-pill">7</span>
-        </a><a href="https://www.nixdevil.com/tags/tape/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="tape">
-          tape <span class="badge rounded-pill">7</span>
-        </a><a href="https://www.nixdevil.com/tags/life/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="life">
-          life <span class="badge rounded-pill">6</span>
-        </a><a href="https://www.nixdevil.com/tags/videos/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="videos">
-          videos <span class="badge rounded-pill">6</span>
-        </a><a href="https://www.nixdevil.com/tags/movies/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="movies">
-          movies <span class="badge rounded-pill">5</span>
-        </a><a href="https://www.nixdevil.com/tags/symantec/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="symantec">
-          symantec <span class="badge rounded-pill">5</span>
-        </a><a href="https://www.nixdevil.com/tags/veritas/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="veritas">
-          veritas <span class="badge rounded-pill">5</span>
-        </a><a href="https://www.nixdevil.com/tags/asterisk/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="asterisk">
-          asterisk <span class="badge rounded-pill">4</span>
-        </a><a href="https://www.nixdevil.com/tags/hacking/" class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="hacking">
-          hacking <span class="badge rounded-pill">4</span>
-        </a></div>
-    </section></div>
+<h4>
+<a href=https://www.nixdevil.com/categories>Categories</a>
+</h4>
+<div><a href=https://www.nixdevil.com/categories/updates/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Updates>
+Updates <span class="badge rounded-pill">23</span>
+</a><a href=https://www.nixdevil.com/categories/open-source/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title="Open Source">
+Open Source <span class="badge rounded-pill">9</span>
+</a><a href=https://www.nixdevil.com/categories/storage/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Storage>
+Storage <span class="badge rounded-pill">9</span>
+</a><a href=https://www.nixdevil.com/categories/media/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Media>
+Media <span class="badge rounded-pill">6</span>
+</a><a href=https://www.nixdevil.com/categories/games/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Games>
+Games <span class="badge rounded-pill">4</span>
+</a><a href=https://www.nixdevil.com/categories/homelab/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=Homelab>
+Homelab <span class="badge rounded-pill">3</span>
+</a></div>
+</section><section class="taxonomy-tags row surface">
+<h4>
+<a href=https://www.nixdevil.com/tags>Tags</a>
+</h4>
+<div><a href=https://www.nixdevil.com/tags/website/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=website>
+website <span class="badge rounded-pill">10</span>
+</a><a href=https://www.nixdevil.com/tags/security/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=security>
+security <span class="badge rounded-pill">7</span>
+</a><a href=https://www.nixdevil.com/tags/tape/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=tape>
+tape <span class="badge rounded-pill">7</span>
+</a><a href=https://www.nixdevil.com/tags/life/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=life>
+life <span class="badge rounded-pill">6</span>
+</a><a href=https://www.nixdevil.com/tags/videos/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=videos>
+videos <span class="badge rounded-pill">6</span>
+</a><a href=https://www.nixdevil.com/tags/movies/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=movies>
+movies <span class="badge rounded-pill">5</span>
+</a><a href=https://www.nixdevil.com/tags/symantec/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=symantec>
+symantec <span class="badge rounded-pill">5</span>
+</a><a href=https://www.nixdevil.com/tags/veritas/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=veritas>
+veritas <span class="badge rounded-pill">5</span>
+</a><a href=https://www.nixdevil.com/tags/asterisk/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=asterisk>
+asterisk <span class="badge rounded-pill">4</span>
+</a><a href=https://www.nixdevil.com/tags/hacking/ class="post-taxonomy rounded btn btn-sm me-2 mb-2" title=hacking>
+hacking <span class="badge rounded-pill">4</span>
+</a></div>
+</section></div>
 </aside>
 </div>
-    </main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="https://github.com/mikepruett3" title="GitHub">
-        <i class="fa-fw fa-2x fab fa-github"></i>
-      </a>
-    </li><li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="https://linkedin.com/in/mpruett" title="LinkedIn">
-        <i class="fa-fw fa-2x fab fa-linkedin-in"></i>
-      </a>
-    </li><li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="https://www.reddit.com/user/Human_Cartographer" title="Reddit">
-        <i class="fa-fw fa-2x fab fa-reddit"></i>
-      </a>
-    </li><li class="nav-item">
-      <a class="nav-link social-link" target="_blank" href="https://www.youtube.com/channel/UCZ-i9SPvPLMQmk1sognhu_A" title="Youtube">
-        <i class="fa-fw fa-2x fab fa-youtube"></i>
-      </a>
-    </li></nav>
+</main><footer class="footer mt-auto py-3 text-center container"><nav class="social-links nav my-2 justify-content-center"><li class=nav-item>
+<a class="nav-link social-link" target=_blank href=https://github.com/mikepruett3 title=GitHub>
+<i class="fa-fw fa-2x fab fa-github"></i>
+</a>
+</li><li class=nav-item>
+<a class="nav-link social-link" target=_blank href=https://linkedin.com/in/mpruett title=LinkedIn>
+<i class="fa-fw fa-2x fab fa-linkedin-in"></i>
+</a>
+</li><li class=nav-item>
+<a class="nav-link social-link" target=_blank href=https://www.reddit.com/user/Human_Cartographer title=Reddit>
+<i class="fa-fw fa-2x fab fa-reddit"></i>
+</a>
+</li><li class=nav-item>
+<a class="nav-link social-link" target=_blank href=https://www.youtube.com/channel/UCZ-i9SPvPLMQmk1sognhu_A title=Youtube>
+<i class="fa-fw fa-2x fab fa-youtube"></i>
+</a>
+</li></nav>
 <div class="copyright mb-2">
-  
 </div>
 <div class="powered-by mb-2">
-  Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and the <a href="https://github.com/razonyang/hugo-theme-bootstrap" target="_blank">Bootstrap</a> theme.
+Powered by <a href=https://gohugo.io target=_blank>Hugo</a> and the <a href=https://github.com/razonyang/hugo-theme-bootstrap target=_blank>Bootstrap</a> theme.
 </div></footer>
-<a id="btnScrollToTop" class="btn-scroll-to-top">
-  <i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
+<a id=btnScrollToTop class=btn-scroll-to-top>
+<i class="fas fa-fw fa-chevron-circle-up fa-2x"></i>
 </a>
 </body>
 </html>
